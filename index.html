@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Real Estate Landing Page</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" type="image/x-icon" href="assets/blue.bird.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet">
+        <link
+            href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+    </head>
+    <body class="bg-white font-Roboto">
+        <!----------HERO SECTION-------->
+        <div
+            class="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center mb-8"
+            style="background-image: url('assets/hero-image1.jpeg'); height:850px">
+            <div
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+                style="background-color: rgba(0, 0, 0, 0.6)">
+                <!---------NAVIGATION------>
+
+                <div
+                    class="flex justify-between mx-auto items-center p-2 fixed top-0 left-0 right-0 z-10 transition-all duration-500 lg:mx-30 xl:mx-36 md:static"
+                    id="navbar">
+
+                    <!------LOGO---->
+                    <div class="flex pointer-events-none">
+                        <img
+                            src="assets/blue.bird-removebg-preview.png"
+                            class="w-48 h-10 object-cover md:w-52 md:h-30">
+                    </div>
+
+                    <!------MENU ITEMS------>
+                    <div class="hidden justify-center md:space-x-4 lg:space-x-8 py-1 md:flex">
+                        <a href="index.html" class="hover:text-slate-300 text-white">Home</a>
+                        <a href="#" class="hover:text-slate-300 text-white">Properties</a>
+                        <a href="#" class="hover:text-slate-300 text-white">Agents</a>
+                        <a href="#" class="hover:text-slate-300 text-white">Company</a>
+
+                    </div>
+
+                    <!---------BUTTONS----->
+                    <div class="space-x-4 hidden md:flex md:mr-5 lg:mr-7">
+                        <a href="#" class="hover:text-slate-300 text-white px-3 py-2">Log In</a>
+                        <a
+                            href="register.html"
+                            class="rounded-lg bg-blue transition duration-500 ease-in-out hover:bg-indigo-900 text-white px-3 py-2">Get Started</a>
+                    </div>
+
+                    <!---------HAMBURGER ICON---->
+                    <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+
+                    <!------MOBILE MENU---->
+                    <div class="md:hidden">
+                        <div
+                            id="menu"
+                            class="absolute hidden flex-col items-center self-end py-8 mt-8 space-y-6 font-bold sm:w-auto sm:self-center left-2 right-2 drop-shadow-md">
+                            <a href="index.html" class="hover:text-slate-300 text-white">Home</a>
+                            <a href="#" class="hover:text-slate-300 text-white">Properties</a>
+                            <a href="#" class="hover:text-slate-300 text-white">Agents</a>
+                            <a href="#" class="hover:text-slate-300 text-white">Company</a>
+                            <a href="#" class="hover:text-slate-300 text-white">Log In</a>
+                            <a
+                                href="register.html"
+                                class="rounded-lg bg-blue transition duration-500 ease-in-out hover:bg-indigo-900 text-white px-3 py-2">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------HERO TITLE------->
+                <div class="mt-24 mx-5">
+                    <h1
+                        class="text-white text-left font-medium text-3xl md:text-center md:max-w-3xl md:mx-auto md:mt-44 md:text-5xl md:font-bold">
+                        Your Gateway to Luxury: Explore Homes with Great Prices
+                    </h1>
+                    <p class="mt-8 text-white text-left  md:text-center md:max-w-2xl md:mx-auto">
+                        Welcome to your oasis of luxury living. Dive into our curated collection of
+                        homes that blend sophistication and affordability seamlessly. Elevate your
+                        livestyle with us.
+                    </p>
+                </div>
+
+                <!---------SEARCH TAB----->
+                <div
+                    class="mx-5 mt-10 flex sm:w-auto flex-col justify-between bg-white rounded-md p-3 md:flex-row md:mt-32 lg:mx-30 xl:mx-36">
+                    <div>
+                        <h2 class="text-gray-500 flex justify-start">
+                            Location
+                        </h2>
+                        <label class="flex">
+                            <input
+                                type="text"
+                                class="mt-1 block w-full outline-none text-gray-500"
+                                placeholder="Enter Location"/>
+                            <i class='bx bx-location-plus absolute text-gray-500 pt-1.5 md:pt-1 md:text-xl'></i>
+                        </label>
+                    </div>
+                    <hr class="h-px my-4 border-0 dark:bg-gray-300 md:hidden">
+                    <div
+                        class="hidden md:inline-block h-[50px] min-h-[1em] w-px self-stretch bg-gray-400 opacity-100 dark:opacity-50 mr-4"></div>
+                    <div>
+                        <h2 class="text-gray-500 flex justify-start">
+                            Property Type
+                        </h2>
+                        <label class="flex">
+                            <select
+                                data-te-select-init="data-te-select-init"
+                                class="mt-1 block w-full outline-none pl-5 text-gray-400">
+                                <option selected="selected">Select Property</option>
+                                <option value="1" class="text-gray-700">Single-family homes</option>
+                                <option value="2" class="text-gray-700">Multi-family homes</option>
+                                <option value="3" class="text-gray-700">Condominiums</option>
+                                <option value="4" class="text-gray-700">Townhouses</option>
+                                <option value="5" class="text-gray-700">Office buildings</option>
+                                <option value="6" class="text-gray-700">Retail properties</option>
+                                <option value="7" class="text-gray-700">Industrial properties</option>
+                                <option value="8" class="text-gray-700">Agricultural Property</option>
+                            </select>
+                            <i
+                                class='bx bx-building-house absolute text-gray-500 pt-1.5 md:pt-1 md:text-xl'></i>
+                        </label>
+                    </div>
+                    <hr class="h-px my-4 border-0 dark:bg-gray-300 md:hidden">
+                    <div
+                        class="hidden md:inline-block h-[50px] min-h-[1em] w-px self-stretch bg-gray-400 opacity-100 dark:opacity-50 mr-4 ml-4"></div>
+                    <div>
+                        <h2 class="text-gray-500 flex justify-start">
+                            Property Status
+                        </h2>
+                        <label class="flex">
+                            <select
+                                data-te-select-init="data-te-select-init"
+                                class="mt-1 block w-full outline-none pl-5 text-gray-400">
+                                <option selected="selected">Select Status</option>
+                                <option value="1" class="text-gray-700">Active</option>
+                                <option value="2" class="text-gray-700">Coming Soon</option>
+                                <option value="3" class="text-gray-700">For Sale by Owner</option>
+                                <option value="4" class="text-gray-700">Price Reduced</option>
+                                <option value="5" class="text-gray-700">New Listing</option>
+                                <option value="6" class="text-gray-700">Withdrawn</option>
+                                <option value="7" class="text-gray-700">Auction</option>
+                                <option value="8" class="text-gray-700">Lease Option</option>
+                            </select>
+                            <i class='bx bx-rotate-right absolute text-gray-500 pt-1.5 md:pt-1 md:text-xl'></i>
+                        </label>
+                    </div>
+                    <hr class="h-px my-4 border-0 dark:bg-gray-300 md:hidden">
+                    <div
+                        class="hidden md:inline-block h-[50px] min-h-[1em] w-px self-stretch bg-gray-400 opacity-100 dark:opacity-50 mr-4 ml-4"></div>
+                    <div>
+                        <h2 class="text-gray-500 flex justify-start">
+                            Price Range
+                        </h2>
+                        <label class="flex">
+                            <select
+                                data-te-select-init="data-te-select-init"
+                                class="mt-1 block w-full outline-none pl-5 text-gray-400">
+                                <option selected="selected">Select Price Range</option>
+                                <option value="1" class="text-gray-700">Under $100,000</option>
+                                <option value="2" class="text-gray-700">$100,000 - $250,000</option>
+                                <option value="3" class="text-gray-700">$250,000 - $500,000</option>
+                                <option value="4" class="text-gray-700">$500,000 - $1,000,000</option>
+                                <option value="5" class="text-gray-700">$1,000,000 - $2,000,000</option>
+                                <option value="6" class="text-gray-700">$2,000,000 - $5,000,000</option>
+                                <option value="7" class="text-gray-700">$5,000,000 - $10,000,000</option>
+                                <option value="8" class="text-gray-700">Over $10,000,000</option>
+                            </select>
+                            <i class='bx bx-dollar-circle absolute text-gray-500 pt-1.5 md:pt-1 md:text-xl'></i>
+                        </label>
+                    </div>
+                    <a
+                        href="#"
+                        class="w-full px-2 py-2 bg-blue text-white mt-5 rounded-md transition duration-500 ease-in-out hover:bg-indigo-900 md:w-24 md:mt-0 md:py-4 md:rounded-lg">Search</a>
+                </div>
+            </div>
+        </div>
+
+        <!--------LISTING----->
+        <div>
+            <div class="flex justify-between lg:mx-30 xl:mx-36">
+                <h2
+                    class="mt-3 mx-5 text-xl font-bold mb-6 text-center md:mt-8 md:mb-10 md:text-3xl xl:mx-0">
+                    Luxury Living, Amazing Value
+                </h2>
+                <a
+                    href="#"
+                    class="hidden px-4 py-1.5 h-10 mt-8 bg-blue text-white rounded-md transition duration-500 ease-in-out hover:bg-indigo-900 md:flex md:mr-5 xl:mr-0">Browse All Properties</a>
+            </div>
+            <div class="grid grid-cols-1 mx-5 md:grid-cols-3 md:gap-6 lg:mx-30 xl:mx-36">
+
+                <!------ITEM1---->
+                <div class="rounded-xl w-full pb-3 mb-7 bg-white shadow-2xl">
+                    <p class="px-2 py-1 rounded-lg bg-blue text-white absolute text-sm">For Sale</p>
+                    <img src="assets/grid1.jpeg" class="w-full h-64 object-cover rounded-t-xl">
+                    <p class="mt-4 px-3 font-semibold">$640,000 - $670,000</p>
+                    <p class="mt-2 px-3 font-semibold">Home in Allentown, NM</p>
+                    <div class="flex px-3 gap-1 mt-2 place-items-center">
+                        <i class='bx bx-location-plus text-gray-500 md:text-xl'></i>
+                        <span class="text-gray-500 text-sm font-medium">4140 Parker Rd. Allentown</span>
+                    </div>
+                    <hr class="h-px my-4 border-0 dark:bg-gray-300 mx-3">
+                    <div class="flex mt-4 justify-between px-3 text-sm font-medium">
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-bed text-gray-500'></i>
+                            <span class="text-gray-500">3 beds</span>
+                        </div>
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-bath text-gray-500'></i>
+                            <span class="text-gray-500">3 baths</span>
+                        </div>
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-expand text-gray-500'></i>
+                            <span class="text-gray-500">3335 sqft</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------ITEM2------>
+                <div class="rounded-xl w-full pb-3 mb-7 bg-white shadow-2xl">
+                    <p class="px-2 py-1 rounded-lg bg-blue text-white absolute text-sm">For Sale</p>
+                    <img src="assets/grid2.jpeg" class="w-full h-64 object-cover rounded-t-xl">
+                    <p class="mt-4 px-3 font-semibold">$650,000 - $690,000</p>
+                    <p class="mt-2 px-3 font-semibold">Modern Loft in Manchester, KT</p>
+                    <div class="flex px-3 gap-1 mt-2 place-items-center">
+                        <i class='bx bx-location-plus text-gray-500 md:text-xl'></i>
+                        <span class="text-gray-500 text-sm font-medium">4157 Washington Ave. Manchester</span>
+                    </div>
+                    <hr class="h-px my-4 border-0 dark:bg-gray-300 mx-3">
+                    <div class="flex mt-4 justify-between px-3 text-sm font-medium">
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-bed text-gray-500'></i>
+                            <span class="text-gray-500">3 beds</span>
+                        </div>
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-bath text-gray-500'></i>
+                            <span class="text-gray-500">3 baths</span>
+                        </div>
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-expand text-gray-500'></i>
+                            <span class="text-gray-500">3335 sqft</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------ITEM3----->
+                <div class="rounded-xl w-full pb-3 mb-7 bg-white shadow-2xl">
+                    <p class="px-2 py-1 rounded-lg bg-white text-blue absolute text-sm">For Rent</p>
+                    <img src="assets/grid3.jpg" class="w-full h-64 object-cover rounded-t-xl">
+                    <p class="mt-4 px-3 font-semibold">$8,000 - $9,400</p>
+                    <p class="mt-2 px-3 font-semibold">Apartment in Santa Ana, IL</p>
+                    <div class="flex px-3 gap-1 mt-2 place-items-center">
+                        <i class='bx bx-location-plus text-gray-500 md:text-xl'></i>
+                        <span class="text-gray-500 text-sm font-medium">2972 Westheimer Rd. Santa Ana</span>
+                    </div>
+                    <hr class="h-px my-4 border-0 dark:bg-gray-300 mx-3">
+                    <div class="flex mt-4 justify-between px-3 text-sm font-medium">
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-bed text-gray-500'></i>
+                            <span class="text-gray-500">3 beds</span>
+                        </div>
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-bath text-gray-500'></i>
+                            <span class="text-gray-500">3 baths</span>
+                        </div>
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-expand text-gray-500'></i>
+                            <span class="text-gray-500">3335 sqft</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------ITEM4----->
+                <div class="rounded-xl w-full pb-3 mb-7 bg-white shadow-2xl">
+                    <p class="px-2 py-1 rounded-lg bg-blue text-white absolute text-sm">For Sale</p>
+                    <img src="assets/grid4.jpeg" class="w-full h-64 object-cover rounded-t-xl">
+                    <p class="mt-4 px-3 font-semibold">$550,000 - $600,000</p>
+                    <p class="mt-2 px-3 font-semibold">Home in St. Utica, PS</p>
+                    <div class="flex px-3 gap-1 mt-2 place-items-center">
+                        <i class='bx bx-location-plus text-gray-500 md:text-xl'></i>
+                        <span class="text-gray-500 text-sm font-medium">3517 W. Gray St. Utica</span>
+                    </div>
+                    <hr class="h-px my-4 border-0 dark:bg-gray-300 mx-3">
+                    <div class="flex mt-4 justify-between px-3 text-sm font-medium">
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-bed text-gray-500'></i>
+                            <span class="text-gray-500">3 beds</span>
+                        </div>
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-bath text-gray-500'></i>
+                            <span class="text-gray-500">3 baths</span>
+                        </div>
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-expand text-gray-500'></i>
+                            <span class="text-gray-500">3335 sqft</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------ITEM5----->
+                <div class="rounded-xl w-full pb-3 mb-7 bg-white shadow-2xl">
+                    <p class="px-2 py-1 rounded-lg bg-white text-blue absolute text-sm">For Rent</p>
+                    <img src="assets/grid5.jpg" class="w-full h-64 object-cover rounded-t-xl">
+                    <p class="mt-4 px-3 font-semibold">$9,100 - $9,600</p>
+                    <p class="mt-2 px-3 font-semibold">Loft in Inglewood, MN</p>
+                    <div class="flex px-3 gap-1 mt-2 place-items-center">
+                        <i class='bx bx-location-plus text-gray-500 md:text-xl'></i>
+                        <span class="text-gray-500 text-sm font-medium">8502 Preston Rd. Inglewood</span>
+                    </div>
+                    <hr class="h-px my-4 border-0 dark:bg-gray-300 mx-3">
+                    <div class="flex mt-4 justify-between px-3 text-sm font-medium">
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-bed text-gray-500'></i>
+                            <span class="text-gray-500">3 beds</span>
+                        </div>
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-bath text-gray-500'></i>
+                            <span class="text-gray-500">3 baths</span>
+                        </div>
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-expand text-gray-500'></i>
+                            <span class="text-gray-500">3335 sqft</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------ITEM6----->
+                <div class="rounded-xl w-full pb-3 mb-7 bg-white shadow-2xl">
+                    <p class="px-2 py-1 rounded-lg bg-blue text-white absolute text-sm">For Sale</p>
+                    <img src="assets/grid6.jpg" class="w-full h-64 object-cover rounded-t-xl">
+                    <p class="mt-4 px-3 font-semibold">$700,000 - $745,000</p>
+                    <p class="mt-2 px-3 font-semibold">Home in St. Celina, DL</p>
+                    <div class="flex px-3 gap-1 mt-2 place-items-center">
+                        <i class='bx bx-location-plus text-gray-500 md:text-xl'></i>
+                        <span class="text-gray-500 text-sm font-medium">6391 Elgin St. Celina</span>
+                    </div>
+                    <hr class="h-px my-4 border-0 dark:bg-gray-300 mx-3">
+                    <div class="flex mt-4 justify-between px-3 text-sm font-medium">
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-bed text-gray-500'></i>
+                            <span class="text-gray-500">3 beds</span>
+                        </div>
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-bath text-gray-500'></i>
+                            <span class="text-gray-500">3 baths</span>
+                        </div>
+                        <div class="flex gap-1 place-items-center">
+                            <i class='bx bx-expand text-gray-500'></i>
+                            <span class="text-gray-500">3335 sqft</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-------STEPS----->
+        <div
+            class="flex flex-col-reverse justify-between md:flex-row md:mt-16 lg:mx-30 xl:mx-36">
+
+            <!-------LEFT------>
+            <div class="mx-5 md:w-1/2">
+                <h2 class="text-left font-bold text-2xl mt-8 xl:text-3xl">
+                    Your Luxurious Journey: Our Seamless Approach
+                </h2>
+                <p class="mt-5 font-medium text-sm text-gray-500 mb-8">
+                    Navigate the realm of luxury effortlessly. Our approach guides you through a
+                    series of steps designed to make your exploration of extraordinary homes both
+                    captivating and hassle-free.
+                </p>
+                <div class="flex gap-x-3 mb-7">
+                    <i
+                        class='bx bxs-binoculars px-3 py-3 h-12 bg-blue text-white text-2xl rounded-md'></i>
+                    <div>
+                        <h3 class="font-bold">
+                            Explore Homes in Your Area
+                        </h3>
+                        <p class="mt-2 text-gray-500 text-sm font-medium">
+                            Discover stunning properties with incredible value where you want to be.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-x-3 mb-7">
+                    <i class='bx bx-calendar px-3 py-3 h-12 bg-blue text-white text-2xl rounded-md'></i>
+                    <div>
+                        <h3 class="font-bold">
+                            Book Agent Meeting
+                        </h3>
+                        <p class="mt-2 text-gray-500 text-sm font-medium">
+                            Book an agent consultation to find your ideal luxury home with unparalled
+                            pricing.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-x-3 mb-7">
+                    <i
+                        class='bx bx-time-five px-3 py-3 h-12 bg-blue text-white text-2xl rounded-md'></i>
+                    <div>
+                        <h3 class="font-bold">
+                            Secure Your Dream Home Within Weeks
+                        </h3>
+                        <p class="mt-2 text-gray-500 text-sm font-medium">
+                            Realize your goal of luxury living in a matter of weeks with our spectacular
+                            residencies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!---------RIGHT------>
+            <div class="mx-5 md:w-1/2">
+                <img
+                    src="assets/image1.jpeg"
+                    class="w-full h-56 rounded-md mt-8 object-cover md:h-full">
+            </div>
+        </div>
+
+        <!-------ABOUT------>
+        <div
+            class="flex flex-col justify-between md:flex-row md:mt-24 lg:mx-30 xl:mx-36 xl:gap-x-7">
+
+            <!------LEFT------>
+            <div class="mx-5 md:w-1/2 xl:mx-0">
+                <img
+                    src="assets/image2.webp"
+                    class="w-full h-56 rounded-md mt-8 object-cover md:h-full">
+            </div>
+
+            <!------RIGHT----->
+            <div class="mx-5 md:w-1/2 mb-5">
+                <h2 class="text-left font-bold text-2xl mt-8 xl:text-3xl">
+                    Navigating Excellence: Our Commitment to Luxurious Value
+                </h2>
+                <p class="mt-5 font-medium text-sm text-gray-500 mb-8">
+                    At Shining Thread, we pride ourselves on navigating excellence with a promise of
+                    luxurious value. Our homes resonate with both prestige and affordability,
+                    offering you a lifestyle of grandeur without compromise.
+                </p>
+                <div class="grid grid-cols-2">
+                    <div>
+                        <h3 class="text-3xl text-blue font-semibold">
+                            80%
+                        </h3>
+                        <p class="font-medium text-sm text-gray-500 mt-2">Customer
+                            <br/>
+                            Satisfaction</p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl text-blue font-semibold">
+                            194+
+                        </h3>
+                        <p class="font-medium text-sm text-gray-500 mt-2">Successful Transactions</p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl text-blue font-semibold mt-5">
+                            250M+
+                        </h3>
+                        <p class="font-medium text-sm text-gray-500 mt-2">In Property Sales</p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl text-blue font-semibold mt-5">
+                            12%
+                        </h3>
+                        <p class="font-medium text-sm text-gray-500 mt-2 mb-10">Avg yearly appreciation</p>
+                    </div>
+                </div>
+                <a
+                    href="#"
+                    class="px-3 py-3 bg-blue transition duration-500 ease-in-out hover:bg-indigo-900 text-white rounded-md ">Find Out More</a>
+            </div>
+        </div>
+
+        <!-------REVIEWS----->
+        <div
+            class="flex flex-col justify-between mx-5 md:flex-row md:gap-12 md:mt-24 lg:mx-30 xl:mx-36">
+
+            <!------LEFT----->
+            <div class="md:w-1/2">
+                <h3 class="text-left font-semibold text-xl mt-8 xl:text-3xl">
+                    Where Luxurious Dreams Come to Life: Client Stories
+                </h3>
+                <p class="mt-5 font-medium text-sm text-gray-500">
+                    Witness the stories of clients who embraced the synthesis of luxury and
+                    affordability through our array of exceptional homes.
+                </p>
+                <div class="shadow-lg p-3 mt-5 mb-5 rounded-lg">
+                    <i class='bx bxs-star text-yellow'></i>
+                    <i class='bx bxs-star text-yellow'></i>
+                    <i class='bx bxs-star text-yellow'></i>
+                    <i class='bx bxs-star text-yellow'></i>
+                    <i class='bx bxs-star text-gray-300'></i>
+                    <blockquote class="text-xl font-semibold mt-3">"Journey of Luxury and Affordability"</blockquote>
+                    <p class="font-medium text-sm text-gray-500 mt-2">
+                        From browsing to moving in, the journey was remarkable. I was impressed by the
+                        high standards of the homes and the affordability factor. An exceptional blend
+                        of luxury and value.
+                    </p>
+                    <div class="flex gap-3 mt-5">
+                        <img src="assets/review1.jpeg" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <p class="font-medium">Albert Flores</p>
+                            <p class="text-blue font-medium">Phoenix, AZ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-----RIGHT------->
+            <div class="md:w-1/2">
+                <div class="shadow-lg p-3 mt-5 mb-5 rounded-lg">
+                    <i class='bx bxs-star text-yellow'></i>
+                    <i class='bx bxs-star text-yellow'></i>
+                    <i class='bx bxs-star text-yellow'></i>
+                    <i class='bx bxs-star text-yellow'></i>
+                    <i class='bx bxs-star text-yellow'></i>
+                    <blockquote class="text-xl font-semibold mt-3">"Seamless Process, Remarkable Value"</blockquote>
+                    <p class="font-medium text-sm text-gray-500 mt-2">
+                        The seamless process of finding my dream home amazed me. The quality of the
+                        homes available at these prices is truly unmatched. A fantastic experience all
+                        around!
+                    </p>
+                    <div class="flex gap-3 mt-5">
+                        <img src="assets/review2.webp" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <p class="font-medium">Jerome Bell</p>
+                            <p class="text-blue font-medium">Houston, TX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-lg p-3 mt-5 mb-5 rounded-lg">
+                    <i class='bx bxs-star text-yellow'></i>
+                    <i class='bx bxs-star text-yellow'></i>
+                    <i class='bx bxs-star text-yellow'></i>
+                    <i class='bx bxs-star text-yellow'></i>
+                    <i class='bx bxs-star text-gray-300'></i>
+                    <blockquote class="text-xl font-semibold mt-3">"Elegance and Practicability in Harmony"</blockquote>
+                    <p class="font-medium text-sm text-gray-500 mt-2">
+                        I'm genuinely impressed by the range of homes available with exceptional value.
+                        The luxury and quality speak for themselves, and the prices are unbeatable. A
+                        real estate gem!
+                    </p>
+                    <div class="flex gap-3 mt-5">
+                        <img src="assets/review3.jpeg" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <p class="font-medium">Esther Howard</p>
+                            <p class="text-blue font-medium">Los Angeles, CA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-------BLOG------>
+        <div class="mx-5 mb-5 md:mt-24 lg:mx-30 xl:mx-36">
+            <h2 class="text-left font-semibold text-xl mt-8 xl:text-3xl">
+                From Trends to Tips: Explore Our Blog
+            </h2>
+            <p class="mt-5 font-medium text-sm text-gray-500">
+                Step into our blog where trends come to life and tips pave the way, offering a
+                comprehensive guide to navigating luxury real estate.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 md:gap-6">
+                <div class="rounded-xl w-full pb-3 mb-7 bg-white shadow-2xl mt-5">
+                    <img src="assets/blog1.jpeg" class="w-full h-64 object-cover rounded-t-xl">
+                    <div class="flex place-items-center gap-4">
+                        <a href="#" class="px-2 py-1 bg-whitesmoke text-blue ml-3 mt-3 rounded-md">Article</a>
+                        <p class="mt-2 text-gray-500">10th Oct 2023</p>
+                    </div>
+                    <h3 class="text-left font-semibold text-lg mt-5 px-3">
+                        Lifestyle Redefined: Luxury Homes with Value
+                    </h3>
+                    <p class="mt-5 font-medium text-sm text-gray-500 px-3">
+                        Dive into the process of discovering and securing your dream home, with expert
+                        tip on navigating the real est...
+                    </p>
+                    <a href="#" class="flex place-items-center gap-3 mt-3 px-3">
+                        <span class="text-blue font-medium">Learn More</span>
+                        <i class='bx bx-arrow-back bx-rotate-180 text-blue text-lg'></i>
+                    </a>
+                </div>
+                <div class="rounded-xl w-full pb-3 mb-7 bg-white shadow-2xl mt-5">
+                    <img src="assets/blog2.jpeg" class="w-full h-64 object-cover rounded-t-xl">
+                    <div class="flex place-items-center gap-4">
+                        <a href="#" class="px-2 py-1 bg-whitesmoke text-blue ml-3 mt-3 rounded-md">Guide</a>
+                        <p class="mt-2 text-gray-500">8th Oct 2023</p>
+                    </div>
+                    <h3 class="text-left font-semibold text-lg mt-5 px-3">
+                        The Art of Luxury Living on a Budget
+                    </h3>
+                    <p class="mt-5 font-medium text-sm text-gray-500 px-3 xl:mt-12">
+                        Unlock a world of opulence and elegance with our selection of luxury homes
+                        featuring unbeatable prices. E...
+                    </p>
+                    <a href="#" class="flex place-items-center gap-3 mt-3 px-3">
+                        <span class="text-blue font-medium">Learn More</span>
+                        <i class='bx bx-arrow-back bx-rotate-180 text-blue text-lg'></i>
+                    </a>
+                </div>
+                <div class="rounded-xl w-full pb-3 mb-7 bg-white shadow-2xl mt-5">
+                    <img src="assets/blog3.jpeg" class="w-full h-64 object-cover rounded-t-xl">
+                    <div class="flex place-items-center gap-4">
+                        <a href="#" class="px-2 py-1 bg-whitesmoke text-blue ml-3 mt-3 rounded-md">Interview</a>
+                        <p class="mt-2 text-gray-500">8th Oct 2023</p>
+                    </div>
+                    <h3 class="text-left font-semibold text-lg mt-5 px-3">
+                        The Elegance of Affordable Luxury
+                    </h3>
+                    <p class="mt-5 font-medium text-sm text-gray-500 px-3 xl:mt-12">
+                        Unveil the charm of luxury homes that offer the perfect fusion of sophistication
+                        and cost-effectiveness...
+                    </p>
+                    <a href="#" class="flex place-items-center gap-3 mt-3 px-3">
+                        <span class="text-blue font-medium">Learn More</span>
+                        <i class='bx bx-arrow-back bx-rotate-180 text-blue text-lg'></i>
+                    </a>
+                </div>
+            </div>
+            <a
+                href="#"
+                class="px-3 py-3 bg-blue transition duration-500 ease-in-out hover:bg-indigo-900 text-white w-full rounded-lg">Browse all posts</a>
+        </div>
+
+        <!---------CTA----->
+        <section class="mx-5 md:mt-24 lg:mx-30 xl:mx-36">
+            <h2
+                class="text-left font-semibold text-xl mt-8 md:text-center xl:text-3xl xl:max-w-xl xl:mx-auto">
+                Get in Touch: Your Gateway to Affordable Luxury Starts Here
+            </h2>
+            <p
+                class="mt-5 font-medium text-sm text-gray-500 text-center xl:max-w-2xl xl:mx-auto">
+                For inquiries, guidance, and a personalized journey toward opulent living within
+                your means, our team eagerly awaits your message.
+            </p>
+            <div class="flex flex-col md:flex-row md:space-x-20">
+
+                <!-----LEFT------>
+                <div class="md:w-2/3 md:mt-5">
+                    <div class="grid gap-6 mb-6 md:grid-cols-2 md:mt-8">
+                        <div>
+                            <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900">First name</label>
+                            <input
+                                type="text"
+                                id="first_name"
+                                class="bg-gray-50 border border-gray-300 outline-none text-gray-900 text-sm rounded-lg block w-full p-2.5  dark:placeholder-gray-400"
+                                placeholder="Please input"
+                                required="required">
+                        </div>
+                        <div>
+                            <label for="email_address" class="block mb-2 text-sm font-medium text-gray-900">Email Address</label>
+                            <input
+                                type="email"
+                                id="email_address"
+                                class="bg-gray-50 border border-gray-300 outline-none text-gray-900 text-sm rounded-lg block w-full p-2.5  dark:placeholder-gray-400"
+                                placeholder="Please input"
+                                required="required">
+                        </div>
+                        <div>
+                            <label for="phone_number" class="block mb-2 text-sm font-medium text-gray-900">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="phone_number"
+                                class="bg-gray-50 border border-gray-300 outline-none text-gray-900 text-sm rounded-lg block w-full p-2.5  dark:placeholder-gray-400"
+                                placeholder="+000"
+                                required="required">
+                        </div>
+                        <div>
+                            <label for="contact" class="block mb-2 text-sm font-medium text-gray-900">Contact Method</label>
+                            <select
+                                id="contact"
+                                class="bg-gray-50 border border-gray-300 outline-none text-gray-900 text-sm rounded-lg block w-full p-2.5  dark:placeholder-gray-400"
+                                required="required">
+                                <option selected="selected" class="text-gray-400">Please Select</option>
+                                <option value="Phone Call">Phone Call</option>
+                                <option value="Email">Email</option>
+                                <option value="Text Message (SMS)">Text Message (SMS)</option>
+                                <option value="Instant Messaging Apps">Instant Messaging Apps</option>
+                            </select>
+                        </div>
+                    </div>
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Message</label>
+                    <textarea
+                        id="message"
+                        rows="4"
+                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                        placeholder="Hi! We are Shining Thread..."></textarea>
+                    <div class="flex items-start mb-6 mt-4">
+                        <div class="flex items-center h-5">
+                            <input
+                                id="remember"
+                                type="checkbox"
+                                value=""
+                                class="w-4 h-4 border border-gray-300 rounded bg-gray-50"
+                                required="required">
+                        </div>
+                        <label for="remember" class="ml-2 text-sm font-medium text-gray-900 ">I agree with
+                            <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">Shining Thread Privacy Policy</a>.</label>
+                    </div>
+                    <button
+                        type="submit"
+                        class="text-white bg-blue transition duration-500 ease-in-out hover:bg-indigo-900 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
+                </div>
+
+                <!--------RIGHT----->
+                <div class="md:w-1/4">
+                    <h2 class="text-left font-medium text-xl mt-8">
+                        Get in touch
+                    </h2>
+                    <p class="mt-5 font-medium text-sm text-gray-500">
+                        Questions or inquiries? Don't hesitate to get in touch and explore luxury homes
+                        within reach.
+                    </p>
+                    <h2 class="text-left font-medium text-xl mt-8">
+                        Address
+                    </h2>
+                    <p class="mt-5 font-medium text-sm text-gray-500">
+                        63571 Reichel island,
+                    </p>
+                    <p class="mt-3 font-medium text-sm text-gray-500">
+                        South Georgia and the South Sandwich Islands
+                    </p>
+                    <div class="flex place-items-center mt-2 space-x-2 text-sm">
+                        <i class='bx bx-envelope text-lg'></i>
+                        <span class="font-medium">Send an email</span>
+                    </div>
+                    <div class="flex place-items-center mt-2 space-x-2 text-sm">
+                        <i class='bx bx-phone text-lg'></i>
+                        <span class="font-medium">Make a phone call</span>
+                    </div>
+                    <p class="mt-8 font-medium">
+                        Social Media
+                    </p>
+                    <div class="flex mt-2 space-x-8 md:space-x-6">
+                        <a href="#">
+                            <img src="assets/facebook.png" class="w-5 h-5 object-cover">
+                        </a>
+                        <a href="#">
+                            <img src="assets/instagram.png" class="w-5 h-5 object-cover">
+                        </a>
+                        <a href="#">
+                            <img src="assets/twitter.png" class="w-5 h-5 object-cover">
+                        </a>
+                        <a href="#">
+                            <img src="assets/linkedin.png" class="w-5 h-5 object-cover">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---------FOOTER------->
+        <div
+            class="flex flex-col justify-between text-sm mt-10 bg-gray-900 px-3 py-3 md:mt-16 md:flex-row lg:py-5 xl:px-36 xl:pt-14">
+            <div class="max-w-sm md:max-w-xs lg:max-w-lg xl:max-w-xl">
+                <div class="flex pointer-events-none">
+                    <img
+                        src="assets/blue.bird-removebg-preview.png"
+                        class="w-44 h-10 object-cover md:w-52 md:h-30">
+                </div>
+                <p class="text-white px-3 pt-4">
+                    Your path to Luxury: Where Price and Prestige Unite. Begin your remarkable
+                    journey.
+                </p>
+                <div class="flex px-2 my-5">
+                    <input
+                        type="text"
+                        id="company"
+                        class=" text-gray-900 text-sm rounded-l-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white outline-none"
+                        placeholder="Enter email..."
+                        required="required">
+                    <button
+                        type="submit"
+                        class="text-white bg-blue transition duration-500 ease-in-out hover:bg-indigo-900 font-medium rounded-r-lg text-sm px-5 py-2.5 text-center">Submit</button>
+                </div>
+            </div>
+            <div
+                class="grid grid-cols-2 px-2 pt-4 text-white md:px-0 md:pt-0 md:grid-cols-3 md:gap-16 xl:gap-x-32">
+                <div>
+                    <h2 class="font-medium mb-2">
+                        Why Choose Us?
+                    </h2>
+                    <ul>
+                        <li class="py-2">
+                            <a href="#" class="text-gray-400 hover:text-white">Featured Properties</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="text-gray-400 hover:text-white">Our Approach</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="text-gray-400 hover:text-white">Blog & Insights</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="text-gray-400 hover:text-white">Request a Tour</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-medium mb-2">
+                        Company
+                    </h2>
+                    <ul>
+                        <li class="py-2 ">
+                            <a href="#" class="text-gray-400 hover:text-white">Leadership</a>
+                        </li>
+                        <li class="py-2 ">
+                            <a href="#" class="text-gray-400 hover:text-white">Careers</a>
+                        </li>
+                        <li class="py-2 ">
+                            <a href="#" class="text-gray-400 hover:text-white">Investor Relations</a>
+                        </li>
+                        <li class="py-2 ">
+                            <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-3 md:mt-0">
+                    <h2 class="font-medium mb-2">
+                        Resources
+                    </h2>
+                    <ul>
+                        <li class="py-2">
+                            <a href="#" class="text-gray-400 hover:text-white">Community</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="text-gray-400 hover:text-white">Events</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="text-gray-400 hover:text-white">Help Center</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="text-gray-400 hover:text-white">Partners</a>
+                        </li class="py-2">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--------FOOTER2----->
+        <div class="bg-gray-900 px-3 pb-3 xl:px-36">
+            <hr class="h-px border-0 dark:bg-gray-500">
+            <p class="text-white text-sm py-5 text-center">
+                &copy; 2023
+                <a href="#" class="hover:underline">Shining Thread</a>, All Rights Reserved.
+            </p>
+        </div>
+        <!--------JS LINKS------>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
