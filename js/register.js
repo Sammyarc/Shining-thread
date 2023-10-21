@@ -66,7 +66,8 @@ form.addEventListener('submit', (e) => {
     !passFieldField.classList.contains('invalid') && 
     !cPassFieldField.classList.contains('invalid')
     ){
-        location.href =form.getAttribute('action');
+        window.location.assign("index.html");
+        alert("Registration Succesful");
     }
 });
 
