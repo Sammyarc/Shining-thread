@@ -23,10 +23,10 @@ eyeIcons.forEach((eyeIcon) => {
   eyeIcon.addEventListener('click', () => {
      const pInput = eyeIcon.parentElement.querySelector('input'); // getting parent element of eyeIcon and selecting the password input
      if (pInput.type === 'password') {
-     eyeIcon.classList.replace('bx bxs-hide', 'bx bxs-show');
+     eyeIcon.classList.replace('bxs-hide', 'bxs-show');
      return (pInput.type = 'text');
      }
-     eyeIcon.classList.replace('bx bxs-show', 'bx bxs-hide');
+     eyeIcon.classList.replace('bxs-show', 'bxs-hide');
      pInput.type = 'password';
   });   
 });
