@@ -17,19 +17,19 @@ function checkEmail() {
 }
 
 // Hide and show password
-const eyeIcons = document.querySelectorAll('.show-hide');
-
-eyeIcons.forEach((eyeIcon) => {
-  eyeIcon.addEventListener('click', () => {
-     const pInput = eyeIcon.parentElement.querySelector('input'); // getting parent element of eyeIcon and selecting the password input
-     if (pInput.type === 'password') {
-     eyeIcon.classList.replace('bxs-hide', 'bxs-show');
-     return (pInput.type = 'text');
-     }
-     eyeIcon.classList.replace('bxs-show', 'bxs-hide');
-     pInput.type = 'password';
-  });   
-});
+const togglePassword = document.getElementById("togglePassword");
+     const pInput = togglePassword.parentElement.querySelector('input'); // getting parent element of togglePasword and selecting the password input
+   togglePassword.addEventListener("click", () => {
+            if (pInput.type === "password") {
+                pInput.type = "text";
+                togglePassword.classList.remove("bxs-hide");
+                togglePassword.classList.add("bxs-show");
+            } else {
+                pInput.type = "password";
+                togglePassword.classList.remove("bxs-show");
+                togglePassword.classList.add("bxs-hide");
+            }
+        });
 
 // Password Validation
 function createPass(){
