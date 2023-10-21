@@ -18,7 +18,7 @@ function checkEmail() {
 
 // Hide and show password
 const passwordInput = document.getElementById("password");
-const confirmPasswordInput = document.getElementById("confirm_Password");
+const confirmPasswordInput = document.getElementById("confirm_password");
 const showPasswordIcon = document.getElementById("showPassword");
 const showConfirmPasswordIcon = document.getElementById("showConfirmPassword");
 
