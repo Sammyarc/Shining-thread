@@ -17,19 +17,36 @@ function checkEmail() {
 }
 
 // Hide and show password
-const togglePassword = document.getElementById("togglePassword");
-     const pInput = togglePassword.parentElement.querySelector('input'); // getting parent element of togglePasword and selecting the password input
-   togglePassword.addEventListener("click", () => {
-            if (pInput.type === "password") {
-                pInput.type = "text";
-                togglePassword.classList.remove("bxs-hide");
-                togglePassword.classList.add("bxs-show");
-            } else {
-                pInput.type = "password";
-                togglePassword.classList.remove("bxs-show");
-                togglePassword.classList.add("bxs-hide");
-            }
-        });
+const passwordInput = document.getElementById("password");
+const confirmPasswordInput = document.getElementById("confirm_Password");
+const showPasswordIcon = document.getElementById("showPassword");
+const showConfirmPasswordIcon = document.getElementById("showConfirmPassword");
+
+showPasswordIcon.addEventListener("click", () => {
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    showPasswordIcon.classList.remove("bxs-hide");
+    showPasswordIcon.classList.add("bxs-show");
+  } else {
+    passwordInput.type = "password";
+    showPasswordIcon.classList.remove("bxs-show");
+    showPasswordIcon.classList.add("bxs-hide");
+  }
+});
+
+showConfirmPasswordIcon.addEventListener("click", () => {
+  if (confirmPasswordInput.type === "password") {
+    confirmPasswordInput.type = "text";
+    showConfirmPasswordIcon.classList.remove("bxs-show");
+    showConfirmPasswordIcon.classList.add("bxs-hide");
+  } else {
+    confirmPasswordInput.type = "password";
+    showConfirmPasswordIcon.classList.remove("bxs-hide");
+    showConfirmPasswordIcon.classList.add("bxs-show");
+  }
+});
+
+
 
 // Password Validation
 function createPass(){
