@@ -66,10 +66,10 @@ function confirmPass(){
    cPassField.classList.remove('invalid'); //removing invalid class if confirmPasswordInput does not match passwordInput
 }
 
-//Calling Function on Form Submit
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault(); //preventing form submitting
+        // Add an event listener to the registration button
+    document.getElementById("registrationButton").addEventListener("click", function (event) {
+    event.preventDefault(); //preventing form submitting
     checkEmail();
     createPass();
     confirmPass();
@@ -83,8 +83,8 @@ form.addEventListener('submit', (e) => {
     !passFieldField.classList.contains('invalid') && 
     !cPassFieldField.classList.contains('invalid')
     ){
-        window.location.assign("index.html");
-        alert("Registration Succesful");
-    }
+            // After successful registration, redirect to index.html
+            window.location.href = "index.html";
+   }
 });
 
