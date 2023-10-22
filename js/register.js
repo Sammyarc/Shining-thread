@@ -6,7 +6,13 @@ const form = document.querySelector('form');
   cPassField = form.querySelector('.confirm-password');
   cPassInput = cPassField.querySelector('.cPassword');
 
-// Email Validation
+  
+        // Add an event listener to the registration form
+    document.getElementById("registrationForm").addEventListener("submit", function (event) {
+    event.preventDefault(); //preventing form submitting
+
+      
+      // Email Validation
 
 function checkEmail() {
     const emaipattern = /^[^]+@[^]+\.[a-z]{2,3}$/;
@@ -67,17 +73,10 @@ function confirmPass(){
 }
 
 
-        // Add an event listener to the registration form
-    document.getElementById("registrationForm").addEventListener("submit", function (event) {
-    event.preventDefault(); //preventing form submitting
     checkEmail();
     createPass();
     confirmPass();
-
-    //calling function on key up
-    emailInput.addEventListener('keyup', checkEmail);
-    passInput.addEventListener('keyup', createPass);
-    cpassInput.addEventListener('keyup', confirmPass);
+    
 
     if (!emailField.classList.contains('invalid') && 
     !passFieldField.classList.contains('invalid') && 
