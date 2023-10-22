@@ -52,7 +52,7 @@ showConfirmPasswordIcon.addEventListener("click", () => {
 function createPass(){
     const passPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
-    if(passInput.value.match(passPattern)){
+    if(!passInput.value.match(passPattern)){
        return passField.classList.add('invalid'); //adding invalid class if password input does not match passPattern
     }
     passField.classList.remove('invalid'); //removing invalid class if password input does not match passPattern
@@ -84,7 +84,7 @@ function confirmPass(){
     !cPassFieldField.classList.contains('invalid')
     ){
             // After successful registration, redirect to index.html
-            window.location.href = "https://shiningthread.netlify.app/";
+            window.location.href = "index.html";
     }                                                      
 });
 
