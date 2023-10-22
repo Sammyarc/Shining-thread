@@ -50,20 +50,20 @@ showConfirmPasswordIcon.addEventListener("click", () => {
 
 // Password Validation
 function createPass(){
-    const passPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+  const passPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8}$/;
 
     if(!passInput.value.match(passPattern)){
-       return passField.classList.add('invalid'); //adding invalid class if password input does not match passPattern
+       return passField.classList.add("invalid"); //adding invalid class if password input does not match passPattern
     }
-    passField.classList.remove('invalid'); //removing invalid class if password input does not match passPattern
+    passField.classList.remove("invalid"); //removing invalid class if password input does not match passPattern
 }
 
 //confirm Password Validation
 function confirmPass(){
    if(passInput.value !== cPassInput.value || cPassInput.value === ''){
-     return cPassField.classList.add('invalid'); //adding invalid class if confirmPasswordInput does not match passwordInput
+     return cPassField.classList.add("invalid"); //adding invalid class if confirmPasswordInput does not match passwordInput
    }
-   cPassField.classList.remove('invalid'); //removing invalid class if confirmPasswordInput does not match passwordInput
+   cPassField.classList.remove("invalid"); //removing invalid class if confirmPasswordInput does not match passwordInput
 }
 
 
