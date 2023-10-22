@@ -5,12 +5,6 @@ const form = document.querySelector('form');
   passInput = passField.querySelector('.password');
   cPassField = form.querySelector('.confirm-password');
   cPassInput = cPassField.querySelector('.cPassword');
-
-  
-        // Add an event listener to the registration form
-    document.getElementById("registrationForm").addEventListener("submit", function (event) {
-    event.preventDefault(); //preventing form submitting
-
       
       // Email Validation
 
@@ -73,6 +67,9 @@ function confirmPass(){
 }
 
 
+// Add an event listener to the registration form
+    document.getElementById("registrationForm").addEventListener("submit", function (event) {
+    event.preventDefault(); //preventing form submitting
     checkEmail();
     createPass();
     confirmPass();
