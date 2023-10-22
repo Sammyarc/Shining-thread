@@ -37,12 +37,12 @@ showPasswordIcon.addEventListener("click", () => {
 showConfirmPasswordIcon.addEventListener("click", () => {
   if (confirmPasswordInput.type === "password") {
     confirmPasswordInput.type = "text";
-    showConfirmPasswordIcon.classList.remove("bxs-show");
-    showConfirmPasswordIcon.classList.add("bxs-hide");
-  } else {
-    confirmPasswordInput.type = "password";
     showConfirmPasswordIcon.classList.remove("bxs-hide");
     showConfirmPasswordIcon.classList.add("bxs-show");
+  } else {
+    confirmPasswordInput.type = "password";
+    showConfirmPasswordIcon.classList.remove("bxs-show");
+    showConfirmPasswordIcon.classList.add("bxs-hide");
   }
 });
 
