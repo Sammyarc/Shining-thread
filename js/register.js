@@ -76,7 +76,11 @@ function confirmPass(){
     checkEmail();
     createPass();
     confirmPass();
-    
+
+      //calling function on key up
+    emailInput.addEventListener('keyup', checkEmail);
+    passInput.addEventListener('keyup', createPass);
+    cpassInput.addEventListener('keyup', confirmPass);
 
     if (!emailField.classList.contains('invalid') && 
     !passFieldField.classList.contains('invalid') && 
