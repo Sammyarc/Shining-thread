@@ -67,7 +67,7 @@ function confirmPass(){
 }
 
 
-        // Add an event listener to the registration button
+        // Add an event listener to the registration form
     document.getElementById("registrationForm").addEventListener("submit", function (event) {
     event.preventDefault(); //preventing form submitting
     checkEmail();
@@ -85,6 +85,6 @@ function confirmPass(){
     ){
             // After successful registration, redirect to index.html
             window.location.href = "index.html";
-   }
+    }                                                      
 });
 
