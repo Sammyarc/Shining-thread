@@ -84,7 +84,7 @@ function confirmPass(){
     !cPassFieldField.classList.contains('invalid')
     ){
             // After successful registration, redirect to index.html
-            window.location.href = "https://clearlink1.netlify.app/#";
+            window.location.href = "index.html";
     }                                                      
 });
 
