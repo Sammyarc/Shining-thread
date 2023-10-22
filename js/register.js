@@ -68,7 +68,7 @@ function confirmPass(){
 
 
 // Add an event listener to the registration form
-    document.getElementById("registrationForm").addEventListener("submit", function (event) {
+    form.addEventListener("submit", function (event) {
     event.preventDefault(); //preventing form submitting
     checkEmail();
     createPass();
