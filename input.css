@@ -61,7 +61,7 @@ input{
 .invalid .error {
     display: flex;
 }
-.invalid .input{
+.invalid input{
     border-color: red;
 }
 
