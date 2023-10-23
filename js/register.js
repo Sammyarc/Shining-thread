@@ -1,4 +1,4 @@
-const form = document.querySelector('form');
+tconst form = document.querySelector('form');
   emailField =form.querySelector('.email-field');
   emailInput = emailField.querySelector('.email');
   passField = form.querySelector('.create-password');
@@ -77,21 +77,19 @@ function confirmPass(){
 
 // Add an event listener to the registration form
     form.addEventListener("submit", function (event) {
-    event.preventDefault(); //preventing form submitting
+    event.preventDefault();
     checkEmail();
     createPass();
     confirmPass();
 
-      //calling function on key up
     emailInput.addEventListener('keyup', checkEmail);
     passInput.addEventListener('keyup', createPass);
-    cpassInput.addEventListener('keyup', confirmPass);
+    cPassInput.addEventListener('keyup', confirmPass);
 
-    if (!emailField.classList.contains('invalid') && 
-    !passFieldField.classList.contains('invalid') && 
-    !cPassFieldField.classList.contains('invalid')
-    ){
-      alert("Form submitted!");
-    }                                                      
+    if (!emailField.classList.contains('invalid') &&
+        !passField.classList.contains('invalid') &&
+        !cPassField.classList.contains('invalid')
+    ) {
+        window.location.href = 'index.html'; // Redirect to index.html on successful validation
+    }
 });
-
