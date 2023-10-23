@@ -65,7 +65,12 @@ function confirmPass(){
    }
    cPassField.classList.remove("invalid"); //removing invalid class if confirmPasswordInput does not match passwordInput
 }
+ 
 
+// DISABLED BUTTON
+  const termsCheckbox = document.getElementById("terms");
+  const registerBtn = document.getElementById("registerBtn");
+   
 
 // Add an event listener to the registration form
     form.addEventListener("submit", function (event) {
@@ -83,8 +88,7 @@ function confirmPass(){
     !passFieldField.classList.contains('invalid') && 
     !cPassFieldField.classList.contains('invalid')
     ){
-            // After successful registration, redirect to index.html
-            window.location.href = "index.html";
+      alert("Form submitted!");
     }                                                      
 });
 
