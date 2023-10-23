@@ -68,8 +68,11 @@ function confirmPass(){
  
 
 // DISABLED BUTTON
-  const termsCheckbox = document.getElementById("terms");
-  const registerBtn = document.getElementById("registerBtn");
+  const termsCheckbox = document.getElementById("remember");
+  const registerBtn = document.getElementById("registerButton");
+  termsCheckbox.addEventListener("change", function () {
+    registerBtn.disabled = !termsCheckbox.checked;
+});
    
 
 // Add an event listener to the registration form
