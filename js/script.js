@@ -60,3 +60,37 @@ emailjs.send(serviceID, templateID, params).then((res) => {
  .catch((err) => console.log(err));
 
 }
+
+
+// LOADING INDICATOR
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Simulate a delay to reduce the speed at which the site is rendered
+    setTimeout(function () {
+        document.querySelector(".loading-overlay").style.display = "none";
+        document.querySelector(".content").style.display = "block";
+    }, 2000); // Change the delay time (in milliseconds) as needed
+});
+
+
+//ANIMATE JS
+
+const callback = function (entries) {
+    entries.forEach((entry) => {
+      console.log(entry);
+  
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate-fadeIn");
+      } else {
+        entry.target.classList.remove("animate-fadeIn");
+      }
+    });
+  };
+  
+  const observer = new IntersectionObserver(callback);
+  
+  const targets = document.querySelectorAll(".js-show-on-scroll");
+  targets.forEach(function (target) {
+    target.classList.add("opacity-0");
+    observer.observe(target);
+  });

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Real Estate Landing Page</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" type="image/x-icon" href="assets/blue.bird.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet">
+        <link
+            href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+    </head>
+    <body class="bg-white font-Roboto">
+        <!----------HERO SECTION-------->
+        <div
+            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+            style="background-color: blue">
+            <!---------NAVIGATION------>
+
+            <div
+                class="flex justify-between mx-auto items-center p-2 fixed top-0 left-0 right-0 z-10 transition-all duration-500 lg:mx-30 xl:mx-36 md:static"
+                id="navbar">
+
+                <!------LOGO---->
+                <div class="flex pointer-events-none">
+                    <img
+                        src="assets/blue.bird-removebg-preview.png"
+                        class="w-48 h-10 object-cover md:w-52 md:h-30">
+                </div>
+
+                <!------MENU ITEMS------>
+                <div class="hidden justify-center md:space-x-4 lg:space-x-8 py-1 md:flex">
+                    <a href="index.html" class="hover:text-slate-300 text-white">Home</a>
+                    <a href="#" class="hover:text-slate-300 text-white">Properties</a>
+                    <a href="#" class="hover:text-slate-300 text-white">Agents</a>
+                    <a href="#" class="hover:text-slate-300 text-white">Company</a>
+
+                </div>
+
+                <!---------BUTTONS----->
+                <div class="space-x-4 hidden md:flex md:mr-5 lg:mr-7">
+                    <a href="#" class="hover:text-slate-300 text-white px-3 py-2">Log In</a>
+                    <a
+                        href="register.html"
+                        class="rounded-lg bg-white transition duration-500 ease-in-out hover:bg-slate-200 text-blue px-3 py-2 font-medium">Get Started</a>
+                </div>
+
+                <!---------HAMBURGER ICON---->
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+
+                <!------MOBILE MENU---->
+                <div class="md:hidden bg-white">
+                    <div
+                        id="menu"
+                        class="absolute hidden flex-col items-center self-end py-8 mt-8 space-y-6 font-bold sm:w-auto sm:self-center left-2 right-2 drop-shadow-md">
+                        <a href="index.html" class="hover:text-slate-300 text-white">Home</a>
+                        <a href="#" class="hover:text-slate-300 text-white">Properties</a>
+                        <a href="#" class="hover:text-slate-300 text-white">Agents</a>
+                        <a href="#" class="hover:text-slate-300 text-white">Company</a>
+                        <a href="#" class="hover:text-slate-300 text-white">Log In</a>
+                        <a
+                            href="register.html"
+                            class="rounded-lg bg-blue transition duration-500 ease-in-out hover:bg-indigo-900 text-white px-3 py-2">Get Started</a>
+                    </div>
+                </div>
+            </div>
+
+            <!---------HERO------>
+
+          
+        </div>
+
+
+        <!--------JS LINKS------>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
