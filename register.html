@@ -23,7 +23,7 @@
         <!----------HERO SECTION-------->
         <div
             class="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center"
-            style="background-image: url('assets/hero-image1.jpeg'); height:1000px">
+            style="background-image: url('assets/hero-image.jpeg'); height:900px">
             <div
                 class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
                 style="background-color: rgba(0, 0, 0, 0.6)">
@@ -89,24 +89,14 @@
                         <div>
                             <label
                                 for="first_name"
-                                class="flex justify-start mb-2 text-sm font-medium text-gray-900">First name</label>
+                                class="flex justify-start mb-2 text-sm font-medium text-gray-900">Username</label>
                             <input
                                 type="text"
                                 id="first_name"
                                 class="border-gray-600 border-b outline-none text-gray-900 text-sm block w-full p-2.5 placeholder-gray-400"
                                 placeholder="First Name"
                                 required="required">
-                        </div>
-                        <div class="mt-5">
-                            <label
-                                for="last_name"
-                                class="flex justify-start mb-2 text-sm font-medium text-gray-900">Last name</label>
-                            <input
-                                type="text"
-                                id="last_name"
-                                class="border-gray-600 border-b outline-none text-gray-900 text-sm block w-full p-2.5 placeholder-gray-400"
-                                placeholder="Last Name"
-                                required="required">
+                                <i class='bx bxs-user-circle absolute right-6 -translate-y-7 text-lg text-gray-700'></i>
                         </div>
                         <div class="mt-5 email-field">
                             <label
@@ -120,6 +110,7 @@
                                 class="border-gray-600 border-b outline-none text-gray-900 text-sm block w-full p-2.5 placeholder-gray-400 email"
                                 placeholder="Enter your email address"
                                 >
+                                <i class='bx bxs-envelope absolute right-6 -translate-y-7 text-lg text-gray-700' ></i>
                             </div>
                                 <span class="error place-items-center text-red-600 mt-2 text-sm">
                                     <i class='bx bx-error-circle text-lg'></i>
@@ -136,7 +127,7 @@
                                 class="border-gray-600 border-b outline-none text-gray-900 text-sm block w-full p-2.5 placeholder-gray-400 password"
                                 placeholder="Create Password"
                                 >
-                                <i class='bx bxs-hide absolute right-12 -translate-y-7 text-lg text-gray-700' id="showPassword"></i>
+                                <i class='bx bxs-hide absolute right-6 -translate-y-7 text-lg text-gray-700' id="showPassword"></i>
                                 <span class="hidden error justify-start text-red-600 mt-2 text-sm">
                                     <i class='bx bx-error-circle text-lg'></i>
                                     <p>Password must be 8 characters long and include at least one uppercase letter, one lowercase letter, and one number.</p>
@@ -152,7 +143,7 @@
                                 class="border-gray-600 border-b outline-none text-gray-900 text-sm block w-full p-2.5 placeholder-gray-400 cPassword "
                                 placeholder="Confirm Password"
                                 >
-                                <i class='bx bxs-hide absolute right-10 -translate-y-7 text-lg text-gray-700' id="showConfirmPassword"></i>
+                                <i class='bx bxs-hide absolute right-6 -translate-y-7 text-lg text-gray-700' id="showConfirmPassword"></i>
                                 <span class="hidden error place-items-center text-red-600 mt-2 text-sm">
                                     <i class='bx bx-error-circle text-lg'></i>
                                     <p>Password don't match</p>

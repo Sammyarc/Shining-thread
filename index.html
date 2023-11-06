@@ -18,20 +18,20 @@
         <link
             href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
             rel='stylesheet'>
-            <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-            </script>
-            <script type="text/javascript">
-            (function(){
-            emailjs.init("aDWcYs70GJHC1wPHl");
-             })();
-            </script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("aDWcYs70GJHC1wPHl");
+            })();
+        </script>
     </head>
     <body class="bg-white font-Roboto">
         <!----------HERO SECTION-------->
         <div
             class="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center mb-8"
-            style="background-image: url('assets/hero-image.jpg'); height:850px">
+            style="background-image: url('assets/hero.jpeg'); height:850px">
             <div
                 class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
                 style="background-color: rgba(0, 0, 0, 0.6)">
@@ -106,29 +106,32 @@
                 <div
                     class="mx-5 mt-10 flex sm:w-auto flex-col justify-between bg-white rounded-md p-3 md:flex-row md:mt-32 lg:mx-30 xl:mx-36">
                     <div>
-                        <h2 class="text-gray-500 flex justify-start">
+                        <h2 class="text-gray-500 flex justify-start font-medium">
                             Location
                         </h2>
-                        <label class="flex">
+                        <label class="flex place-items-center">
                             <input
                                 type="text"
-                                class="mt-1 block w-full outline-none text-gray-500"
+                                class="mt-1 ml-2 block w-full outline-none text-gray-500"
                                 placeholder="Enter Location"/>
-                            <i class='bx bx-location-plus absolute text-gray-500 pt-1.5 md:pt-1 md:text-xl'></i>
+                            <i
+                                class='bx bx-location-plus absolute text-xl text-gray-500 pt-1 md:pt-1 md:text-2xl'></i>
                         </label>
                     </div>
-                    <hr class="h-px my-4 border-0 dark:bg-gray-300 md:hidden">
+                    <hr class="h-px my-2 border-0 dark:bg-gray-300 md:hidden">
                     <div
                         class="hidden md:inline-block h-[50px] min-h-[1em] w-px self-stretch bg-gray-400 opacity-100 dark:opacity-50 mr-4"></div>
                     <div>
-                        <h2 class="text-gray-500 flex justify-start">
+                        <h2 class="text-gray-500 flex justify-start font-medium">
                             Property Type
                         </h2>
-                        <label class="flex">
+                        <label class="flex place-items-center gap-1">
+                            <i class='bx bx-building-house text-xl text-gray-500 md:text-2xl'></i>
                             <select
-                                data-te-select-init="data-te-select-init"
-                                class="mt-1 block w-full outline-none pl-5 text-gray-400">
-                                <option selected="selected">Select Property</option>
+                                id="contact"
+                                class="border-none outline-none text-gray-400 rounded-lg block w-full p-2  dark:placeholder-gray-400"
+                                required="required">
+                                <option selected="selected" class="text-gray-900">Please Select</option>
                                 <option value="1" class="text-gray-700">Single-family homes</option>
                                 <option value="2" class="text-gray-700">Multi-family homes</option>
                                 <option value="3" class="text-gray-700">Condominiums</option>
@@ -138,22 +141,22 @@
                                 <option value="7" class="text-gray-700">Industrial properties</option>
                                 <option value="8" class="text-gray-700">Agricultural Property</option>
                             </select>
-                            <i
-                                class='bx bx-building-house absolute text-gray-500 pt-1.5 md:pt-1 md:text-xl'></i>
                         </label>
                     </div>
-                    <hr class="h-px my-4 border-0 dark:bg-gray-300 md:hidden">
+                    <hr class="h-px my-2 border-0 dark:bg-gray-300 md:hidden">
                     <div
                         class="hidden md:inline-block h-[50px] min-h-[1em] w-px self-stretch bg-gray-400 opacity-100 dark:opacity-50 mr-4 ml-4"></div>
                     <div>
-                        <h2 class="text-gray-500 flex justify-start">
+                        <h2 class="text-gray-500 flex justify-start font-medium">
                             Property Status
                         </h2>
-                        <label class="flex">
+                        <label class="flex place-items-center gap-1">
+                            <i class='bx bx-rotate-right text-xl text-gray-500 md:text-2xl'></i>
                             <select
-                                data-te-select-init="data-te-select-init"
-                                class="mt-1 block w-full outline-none pl-5 text-gray-400">
-                                <option selected="selected">Select Status</option>
+                                id="contact"
+                                class="border-none outline-none text-gray-400 rounded-lg block w-full p-2  dark:placeholder-gray-400"
+                                required="required">
+                                <option selected="selected" class="text-gray-900">Please Select</option>
                                 <option value="1" class="text-gray-700">Active</option>
                                 <option value="2" class="text-gray-700">Coming Soon</option>
                                 <option value="3" class="text-gray-700">For Sale by Owner</option>
@@ -163,31 +166,31 @@
                                 <option value="7" class="text-gray-700">Auction</option>
                                 <option value="8" class="text-gray-700">Lease Option</option>
                             </select>
-                            <i class='bx bx-rotate-right absolute text-gray-500 pt-1.5 md:pt-1 md:text-xl'></i>
                         </label>
                     </div>
-                    <hr class="h-px my-4 border-0 dark:bg-gray-300 md:hidden">
+                    <hr class="h-px my-2 border-0 dark:bg-gray-300 md:hidden">
                     <div
                         class="hidden md:inline-block h-[50px] min-h-[1em] w-px self-stretch bg-gray-400 opacity-100 dark:opacity-50 mr-4 ml-4"></div>
                     <div>
-                        <h2 class="text-gray-500 flex justify-start">
+                        <h2 class="text-gray-500 flex justify-start font-medium">
                             Price Range
                         </h2>
-                        <label class="flex">
+                        <label class="flex place-items-center gap-1">
+                            <i class='bx bx-dollar-circle text-xl text-gray-500 md:text-2xl'></i>
                             <select
-                                data-te-select-init="data-te-select-init"
-                                class="mt-1 block w-full outline-none pl-5 text-gray-400">
-                                <option selected="selected">Select Price Range</option>
-                                <option value="1" class="text-gray-700">Under $100,000</option>
-                                <option value="2" class="text-gray-700">$100,000 - $250,000</option>
-                                <option value="3" class="text-gray-700">$250,000 - $500,000</option>
-                                <option value="4" class="text-gray-700">$500,000 - $1,000,000</option>
-                                <option value="5" class="text-gray-700">$1,000,000 - $2,000,000</option>
-                                <option value="6" class="text-gray-700">$2,000,000 - $5,000,000</option>
-                                <option value="7" class="text-gray-700">$5,000,000 - $10,000,000</option>
-                                <option value="8" class="text-gray-700">Over $10,000,000</option>
+                                id="contact"
+                                class="border-none outline-none text-gray-400 rounded-lg block w-full p-2  dark:placeholder-gray-400"
+                                required="required">
+                                <option selected="selected" class="text-gray-900">Please Select</option>
+                                <option value="1" class="text-gray-700">Active</option>
+                                <option value="2" class="text-gray-700">Coming Soon</option>
+                                <option value="3" class="text-gray-700">For Sale by Owner</option>
+                                <option value="4" class="text-gray-700">Price Reduced</option>
+                                <option value="5" class="text-gray-700">New Listing</option>
+                                <option value="6" class="text-gray-700">Withdrawn</option>
+                                <option value="7" class="text-gray-700">Auction</option>
+                                <option value="8" class="text-gray-700">Lease Option</option>
                             </select>
-                            <i class='bx bx-dollar-circle absolute text-gray-500 pt-1.5 md:pt-1 md:text-xl'></i>
                         </label>
                     </div>
                     <a
@@ -741,11 +744,15 @@
                     <p class="mt-3 font-medium text-sm text-gray-500">
                         South Georgia and the South Sandwich Islands
                     </p>
-                    <a href="mailto: nkemakolamsam@gmail.com" class="flex place-items-center mt-2 space-x-2 text-sm">
+                    <a
+                        href="mailto: nkemakolamsam@gmail.com"
+                        class="flex place-items-center mt-2 space-x-2 text-sm">
                         <i class='bx bx-envelope text-lg'></i>
                         <span class="font-medium">Send an email</span>
                     </a>
-                    <a href="tel:+2347058667431" class="flex place-items-center mt-2 space-x-2 text-sm">
+                    <a
+                        href="tel:+2347058667431"
+                        class="flex place-items-center mt-2 space-x-2 text-sm">
                         <i class='bx bx-phone text-lg'></i>
                         <span class="font-medium">Make a phone call</span>
                     </a>
@@ -783,10 +790,11 @@
                     Your path to Luxury: Where Price and Prestige Unite. Begin your remarkable
                     journey.
                 </p>
+                <form id="subscription-form">
                 <div class="flex px-2 my-5">
                     <input
-                        type="text"
-                        id="company"
+                        type="email"
+                        id="email"
                         class=" text-gray-900 text-sm rounded-l-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white outline-none"
                         placeholder="Enter email..."
                         required="required">
@@ -794,6 +802,7 @@
                         type="submit"
                         class="text-white bg-blue transition duration-500 ease-in-out hover:bg-indigo-900 font-medium rounded-r-lg text-sm px-5 py-2.5 text-center">Subscribe</button>
                 </div>
+                </form>
             </div>
             <div
                 class="grid grid-cols-2 px-2 pt-4 text-white md:px-0 md:pt-0 md:grid-cols-3 md:gap-16 xl:gap-x-32">
