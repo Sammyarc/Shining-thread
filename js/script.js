@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         document.querySelector(".loading-overlay").style.display = "none";
         document.querySelector(".content").style.display = "block";
-    }, 2000); // Change the delay time (in milliseconds) as needed
+    }, 4000); // Change the delay time (in milliseconds) as needed
 });
 
 
