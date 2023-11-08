@@ -18,73 +18,161 @@
         <link
             href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
             rel='stylesheet'>
+            <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     </head>
     <body class="bg-white font-Roboto">
         <!----------HERO SECTION-------->
-        <div
-            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-            style="background-color: blue">
-            <!---------NAVIGATION------>
-
+        <div class="relative" style="background-color: blue; height:400px">
             <div
-                class="flex justify-between mx-auto items-center p-2 fixed top-0 left-0 right-0 z-10 transition-all duration-500 lg:mx-30 xl:mx-36 md:static"
-                id="navbar">
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+                style="background-color:rgba(92, 119, 255, 0.72)">
+                <!---------NAVIGATION------>
 
-                <!------LOGO---->
-                <div class="flex pointer-events-none">
-                    <img
-                        src="assets/blue.bird-removebg-preview.png"
-                        class="w-48 h-10 object-cover md:w-52 md:h-30">
-                </div>
+                <div
+                    class="flex justify-between mx-auto items-center p-2 fixed top-0 left-0 right-0 z-10 transition-all duration-500 lg:mx-30 xl:mx-36 md:static"
+                    id="navbar">
 
-                <!------MENU ITEMS------>
-                <div class="hidden justify-center md:space-x-4 lg:space-x-8 py-1 md:flex">
-                    <a href="index.html" class="hover:text-slate-300 text-white">Home</a>
-                    <a href="#" class="hover:text-slate-300 text-white">Properties</a>
-                    <a href="#" class="hover:text-slate-300 text-white">Agents</a>
-                    <a href="#" class="hover:text-slate-300 text-white">Company</a>
+                    <!------LOGO---->
+                    <div class="flex pointer-events-none">
+                        <img
+                            src="assets/blue.bird-removebg-preview.png"
+                            class="w-48 h-10 object-cover md:w-52 md:h-30">
+                    </div>
 
-                </div>
-
-                <!---------BUTTONS----->
-                <div class="space-x-4 hidden md:flex md:mr-5 lg:mr-7">
-                    <a href="#" class="hover:text-slate-300 text-white px-3 py-2">Log In</a>
-                    <a
-                        href="register.html"
-                        class="rounded-lg bg-white transition duration-500 ease-in-out hover:bg-slate-200 text-blue px-3 py-2 font-medium">Get Started</a>
-                </div>
-
-                <!---------HAMBURGER ICON---->
-                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-                    <span class="hamburger-top"></span>
-                    <span class="hamburger-middle"></span>
-                    <span class="hamburger-bottom"></span>
-                </button>
-
-                <!------MOBILE MENU---->
-                <div class="md:hidden bg-white">
-                    <div
-                        id="menu"
-                        class="absolute hidden flex-col items-center self-end py-8 mt-8 space-y-6 font-bold sm:w-auto sm:self-center left-2 right-2 drop-shadow-md">
+                    <!------MENU ITEMS------>
+                    <div class="hidden justify-center md:space-x-4 lg:space-x-8 py-1 md:flex">
                         <a href="index.html" class="hover:text-slate-300 text-white">Home</a>
                         <a href="#" class="hover:text-slate-300 text-white">Properties</a>
                         <a href="#" class="hover:text-slate-300 text-white">Agents</a>
                         <a href="#" class="hover:text-slate-300 text-white">Company</a>
-                        <a href="#" class="hover:text-slate-300 text-white">Log In</a>
+
+                    </div>
+
+                    <!---------BUTTONS----->
+                    <div class="space-x-4 hidden md:flex md:mr-5 lg:mr-7">
+                        <a href="#" class="hover:text-slate-300 text-white px-3 py-2">Log In</a>
                         <a
                             href="register.html"
-                            class="rounded-lg bg-blue transition duration-500 ease-in-out hover:bg-indigo-900 text-white px-3 py-2">Get Started</a>
+                            class="rounded-lg bg-white transition duration-500 ease-in-out hover:bg-slate-200 text-blue px-3 py-2 font-medium">Get Started</a>
+                    </div>
+
+                    <!---------HAMBURGER ICON---->
+                    <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+
+                    <!------MOBILE MENU---->
+                    <div class="md:hidden bg-white">
+                        <div
+                            id="menu"
+                            class="absolute hidden flex-col items-center self-end py-8 mt-8 space-y-6 font-bold sm:w-auto sm:self-center left-2 right-2 drop-shadow-md">
+                            <a href="index.html" class="hover:text-slate-300 text-white">Home</a>
+                            <a href="#" class="hover:text-slate-300 text-white">Properties</a>
+                            <a href="#" class="hover:text-slate-300 text-white">Agents</a>
+                            <a href="#" class="hover:text-slate-300 text-white">Company</a>
+                            <a href="#" class="hover:text-slate-300 text-white">Log In</a>
+                            <a
+                                href="register.html"
+                                class="rounded-lg bg-blue transition duration-500 ease-in-out hover:bg-indigo-900 text-white px-3 py-2">Get Started</a>
+                        </div>
                     </div>
                 </div>
+
+                <!---------HERO TEXT------>
+                <div class="mt-10 mx-5">
+                    <h1
+                        class="text-blue rounded-full p-2 w-48 mx-auto mt-24 bg-white font-medium text-xs text-center md:mt-14 md:font-bold js-show-on-scroll">
+                        ABOUT SHINING THREAD
+                    </h1>
+                    <p
+                        class="mt-8 text-white text-2xl max-w-3xl font-semibold text-center md:max-w-3xl md:mx-auto md:text-5xl js-show-on-scroll">
+                        Experience the Difference: Our Real Estate Journey Unfolded
+                    </p>
+                    <p
+                        class="mt-8 text-white text-sm mx-auto text-center md:max-w-xl js-show-on-scroll">
+                        Our journey in real estate is a testament to our unwavering commitment to
+                        redefine luxury living, ensuring that each home we offer marries opulence with
+                        affordability.
+                    </p>
+                </div>
+
             </div>
-
-            <!---------HERO------>
-
-          
         </div>
 
+        <!----------COMMIT----->
+        <div class="mt-10 mx-5">
+            <h1
+                class="text-black text-center font-medium text-3xl md:max-w-4xl md:mx-auto md:text-4xl js-show-on-scroll">
+                Our Commitment to Extraordinary Living
+            </h1>
+            <p
+                class="mt-5 text-gray-500 mx-auto text-sm text-center md:max-w-3xl md:text-base js-show-on-scroll">
+                Our relentless pursuit of excellence drives us to connect individuals with homes
+                that inspire, enrich and elevate their lives.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 md:gap-6 lg:mx-30 xl:mx-36 mt-8">
+                <!-------GRID1----->
+                <div
+                    class="rounded-xl w-full py-5 px-2 mb-7 bg-white shadow-2xl md:p-5 js-show-on-scroll">
+                    <i class='bx bx-donate-heart text-4xl text-blue'></i>
+                    <h1 class="text-2xl font-medium my-3">Our Values</h1>
+                    <p class="text-sm md:text-base">
+                        At the core of our real estate philosophy are our values: integrity, quality and
+                        inclusivity. We're not just selling homes; we're offering an experience. Our
+                        commitment to providing luxury homes at exceptional prices stems from our belief
+                        that everyone should have the opportunity to live in a space that exudes
+                        elegance and comfort.
+                    </p>
+                </div>
 
-        <!--------JS LINKS------>
-        <script type="text/javascript" src="js/script.js"></script>
-    </body>
-</html>
+                <!--------GRID2----->
+                <div
+                    class="rounded-xl w-full py-5 px-2 mb-7 bg-white shadow-2xl md:p-5 js-show-on-scroll">
+                    <i class='bx bx-bullseye text-4xl text-blue'></i>
+                    <h1 class="text-2xl font-medium my-3">Our Mission</h1>
+                    <p class="text-sm md:text-base">
+                        Our mission is to bridge the gap between luxury and affordability in real estate
+                        industry. We carefully select homes that epitomize opulence and combine them
+                        with prizes that reflect extraordinary value. We're driven by the belief that
+                        everyone should have the opportunity to experience the highest standard of
+                        living.
+                    </p>
+                </div>
+
+                <!-----GRID3----->
+                <div
+                    class="rounded-xl w-full py-5 px-2 mb-7 bg-white shadow-2xl md:p-5 js-show-on-scroll">
+                    <i class='bx bx-show text-4xl text-blue'></i>
+                    <h1 class="text-2xl font-medium my-3">Our Vision</h1>
+                    <p class="text-sm md:text-base">
+                        Our vision is simple yet profound: to make luxury living an attainable
+                        experience. We're driven by the belief that true luxury should be within reach
+                        of those who appreciate it. By meticulously curating homes that exude opulence
+                        and offering them at remarkable prices, we aim to redefine the narrative of what
+                        it means to live in luxury.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--------TEAM----->
+        <div class="bg-white mt-20 mx-5">
+            <h1
+                class="text-black text-center font-semibold text-2xl md:max-w-4xl md:mx-auto md:text-4xl js-show-on-scroll">
+                Our Team: Passionate Experts in Luxury Real Estate
+            </h1>
+            <p
+                class="mt-5 text-gray-500 mx-auto text-sm text-center md:max-w-3xl md:text-base js-show-on-scroll">
+                Meet our dedicated team of experts, each driven by a shared commitment to
+                redefine luxury real estate, making opulent living more accessible to all.
+            </p>
+            <!--------CAROUSEL---->
+           
+
+            <!--------JS LINKS------>
+            <script type="text/javascript" src="js/script.js"></script>
+            <script src="js/swiper-bundle.min.js"></script>
+        </body>
+    </html>

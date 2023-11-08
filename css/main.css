@@ -607,6 +607,11 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -783,6 +788,10 @@ video {
 
 .w-px {
   width: 1px;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
 }
 
 .max-w-sm {
@@ -1112,6 +1121,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1125,6 +1139,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -1145,6 +1164,11 @@ video {
 
 .lowercase {
   text-transform: lowercase;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-blue {
@@ -1377,6 +1401,33 @@ input{
   animation: fadeIn 1.5s ease-in forwards;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media(min-width:768px){
   .bg-on-scroll,
     #menu{
@@ -1486,6 +1537,10 @@ input{
     margin-top: 0px;
   }
 
+  .md\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
   .md\:mt-16 {
     margin-top: 4rem;
   }
@@ -1558,6 +1613,14 @@ input{
     max-width: 48rem;
   }
 
+  .md\:max-w-4xl {
+    max-width: 56rem;
+  }
+
+  .md\:max-w-xl {
+    max-width: 36rem;
+  }
+
   .md\:max-w-xs {
     max-width: 20rem;
   }
@@ -1608,6 +1671,10 @@ input{
     border-radius: 0.5rem;
   }
 
+  .md\:p-5 {
+    padding: 1.25rem;
+  }
+
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1640,9 +1707,19 @@ input{
     line-height: 2.25rem;
   }
 
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .md\:text-xl {
