@@ -18,4 +18,12 @@ showConfirmPasswordIcon.addEventListener("click", () => {
       showConfirmPasswordIcon.classList.add("bxs-hide");
     }
   });
+
+
+  // DISABLED BUTTON
+  const termsCheckbox = document.getElementById("remember");
+  const loginBtn = document.getElementById("loginButton");
+  termsCheckbox.addEventListener("change", function () {
+    loginBtn.disabled = !termsCheckbox.checked;
+});
   
