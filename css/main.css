@@ -1661,6 +1661,18 @@ input{
     border-radius: 0.5rem;
   }
 
+  .md\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .md\:bg-inherit {
+    background-color: inherit;
+  }
+
+  .md\:bg-none {
+    background-image: none;
+  }
+
   .md\:p-5 {
     padding: 1.25rem;
   }
