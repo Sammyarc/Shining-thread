@@ -1280,7 +1280,8 @@ video {
 
 .bg-on-scroll,
 #menu {
-  background-color: rgb(25, 26, 26);
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 .hamburger{
@@ -1430,11 +1431,6 @@ input{
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-slate-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -1659,18 +1655,6 @@ input{
 
   .md\:rounded-lg {
     border-radius: 0.5rem;
-  }
-
-  .md\:bg-transparent {
-    background-color: transparent;
-  }
-
-  .md\:bg-inherit {
-    background-color: inherit;
-  }
-
-  .md\:bg-none {
-    background-image: none;
   }
 
   .md\:p-5 {
