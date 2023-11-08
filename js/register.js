@@ -90,6 +90,6 @@ function confirmPass(){
         !passField.classList.contains('invalid') &&
         !cPassField.classList.contains('invalid')
     ) {
-        window.location.href = 'index.html'; // Redirect to index.html on successful validation
+        window.location.href = 'login.html'; // Redirect to index.html on successful validation
     }
 });
