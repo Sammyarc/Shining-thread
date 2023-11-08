@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.getElementById("navbar");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 100) { // Change 100 to the desired scroll position
+        if (window.scrollY > 1) { // Change 100 to the desired scroll position
             navbar
                 .classList
                 .add("bg-on-scroll");
