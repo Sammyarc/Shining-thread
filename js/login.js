@@ -29,9 +29,3 @@ showConfirmPasswordIcon.addEventListener("click", () => {
     }
 });
 
-// DISABLED BUTTON
-const termsCheckbox = document.getElementById("remember");
-const loginBtn = document.getElementById("loginButton");
-termsCheckbox.addEventListener("change", function () {
-    loginBtn.disabled = !termsCheckbox.checked;
-});
