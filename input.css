@@ -5,8 +5,7 @@
 
 .bg-on-scroll,
 #menu {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+    background-color: rgb(15, 16, 16);
 }
 .hamburger{
     cursor: pointer;
