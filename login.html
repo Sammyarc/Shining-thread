@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Real Estate Landing Page</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" type="image/x-icon" href="assets/blue.bird.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet">
+        <link
+            href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+    </head>
+    <body>
+        <div
+            class="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center"
+            style="background-image: url('assets/hero.jpeg'); height:730px">
+            <div
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+                style="background-color: rgba(0, 0, 0, 0.6)">
+                <!---------NAVIGATION------>
+
+                <div
+                    class="flex justify-between mx-auto items-center p-2 fixed top-0 left-0 right-0 z-10 transition-all duration-500 lg:mx-30 xl:mx-36 md:static"
+                    id="navbar">
+
+                    <!------LOGO---->
+                    <div class="flex pointer-events-none">
+                        <img
+                            src="assets/blue.bird-removebg-preview.png"
+                            class="w-48 h-10 object-cover md:w-52 md:h-30">
+                    </div>
+
+                    <!------MENU ITEMS------>
+                    <div class="hidden justify-center md:space-x-4 lg:space-x-8 py-1 md:flex">
+                        <a href="index.html" class="hover:text-slate-300 text-white">Home</a>
+                        <a href="#" class="hover:text-slate-300 text-white">Properties</a>
+                        <a href="#" class="hover:text-slate-300 text-white">Agents</a>
+                        <a href="about.html" class="hover:text-slate-300 text-white">Company</a>
+
+                    </div>
+
+                    <!---------BUTTONS----->
+                    <div class="space-x-4 hidden md:flex md:mr-5 lg:mr-7">
+                        <a href="login.html" class="hover:text-slate-300 text-white px-3 py-2">Log In</a>
+                        <a
+                            href="register.html"
+                            class="rounded-lg bg-blue transition duration-500 ease-in-out hover:bg-indigo-900 text-white px-3 py-2">Get Started</a>
+                    </div>
+
+                    <!---------HAMBURGER ICON---->
+                    <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+
+                    <!------MOBILE MENU---->
+                    <div class="md:hidden">
+                        <div
+                            id="menu"
+                            class="absolute hidden flex-col items-center self-end py-8 mt-8 space-y-6 font-bold sm:w-auto sm:self-center left-2 right-2 drop-shadow-md">
+                            <a href="index.html" class="hover:text-slate-300 text-white">Home</a>
+                            <a href="#" class="hover:text-slate-300 text-white">Properties</a>
+                            <a href="#" class="hover:text-slate-300 text-white">Agents</a>
+                            <a href="about.html" class="hover:text-slate-300 text-white">Company</a>
+                            <a href="login.html" class="hover:text-slate-300 text-white">Log In</a>
+                            <a
+                                href="register.html"
+                                class="rounded-lg bg-blue transition duration-500 ease-in-out hover:bg-indigo-900 text-white px-3 py-2">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <!----------FORM INPUTS----->
+
+                <section class="bg-white mx-6 md:w-96 md:mx-auto rounded-lg p-5 mt-32 mb-6 relative">
+                    <h1 class="text-center text-3xl font-bold mb-6">
+                        Log In
+                    </h1>
+                    <form id="LogInForm">
+                        <div class="mt-5 email-field">
+                            <label
+                                for="email"
+                                class="flex justify-start mb-2 text-sm font-medium text-gray-900">Email address
+                            </label>
+                            <div class="input-field">
+                                <input
+                                type="email"
+                                id="email"
+                                class="border-gray-600 border-b outline-none text-gray-900 text-sm block w-full p-2.5 placeholder-gray-400 email"
+                                placeholder="Enter your email address"
+                                >
+                                <i class='bx bxs-envelope absolute right-6 -translate-y-7 text-lg text-gray-700' ></i>
+                            </div>
+                                <span class="error place-items-center text-red-600 mt-2 text-sm">
+                                    <i class='bx bx-error-circle text-lg'></i>
+                                    <p>Please enter a valid email address</p>
+                                </span>
+                        </div>
+                        <div class="mt-5 confirm-password">
+                            <label
+                                for="confirm_password"
+                                class="flex justify-start mb-2 text-sm font-medium text-gray-900"> Password</label>
+                            <input
+                                type="password"
+                                id="confirm_password"
+                                class="border-gray-600 border-b outline-none text-gray-900 text-sm block w-full p-2.5 placeholder-gray-400 cPassword "
+                                placeholder="Enter Password"
+                                >
+                                <i class='bx bxs-hide absolute right-6 -translate-y-7 text-lg text-gray-700' id="showConfirmPassword"></i>
+                                <span class="hidden error place-items-center text-red-600 mt-2 text-sm">
+                                    <i class='bx bx-error-circle text-lg'></i>
+                                    <p>Password don't match</p>
+                                </span>
+                        </div>
+                        <div class="flex items-start mt-5">
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5">
+                                    <input
+                                        id="remember"
+                                        type="checkbox"
+                                        value=""
+                                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                                        required="required">
+                                </div>
+                                <label
+                                    for="remember"
+                                    class="ml-2 text-sm font-medium">Remember me</label>
+                            </div>
+                            <a
+                                href="#"
+                                class="ml-auto text-sm font-medium hover:underline">Lost Password?</a>
+                        </div>
+                        <button
+                            type="submit"
+                            class="w-full mt-8 text-white bg-blue transition duration-500 ease-in-out hover:bg-indigo-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login to your account</button>
+                        <div class="text-sm font-medium mt-5">
+                            Don't have an account?
+                            <a href="register.html" class="text-blue-700 hover:underline dark:text-blue-500">Register</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/register.js"></script>
+    </body>
+</html>
