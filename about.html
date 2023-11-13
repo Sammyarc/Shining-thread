@@ -18,6 +18,10 @@
         <link
             href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
             rel='stylesheet'>
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     </head>
     <body class="bg-white font-Roboto">
         <!----------HERO SECTION-------->
@@ -67,7 +71,7 @@
                     <div class="md:hidden bg-white">
                         <div
                             id="menu"
-                            class="absolute hidden flex-col items-center self-end py-8 mt-8 space-y-6 font-bold sm:w-auto sm:self-center left-2 right-2 drop-shadow-md"
+                            class="absolute hidden flex-col items-center rounded-xl self-end py-8 mt-8 space-y-6 font-bold sm:w-auto sm:self-center left-2 right-2 drop-shadow-md"
                             style="background-color: white;">
                             <a
                                 href="index.html"
@@ -198,12 +202,11 @@
                 redefine luxury real estate, making opulent living more accessible to all.
             </p>
             <!--------CAROUSEL---->
-            <div class="mt-10 lg:mx-30 xl:mx-36 js-show-on-scroll" id="slider-container">
-                <div
-                    class="team-carousel" id="slides">
-                    <!-----TEAM MEMBER1-->
-                    <div class="slide sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
-                        <div class="shadow-lg rounded-xl">
+            <div class="swiper mySwiper mt-10 js-show-on-scroll">
+                <div class="swiper-wrapper py-10">
+                    <div class="swiper-slide relative">
+                        <div class="card shadow-lg rounded-xl">
+                            <p class="px-2 py-1 rounded-lg bg-blue text-white absolute text-sm">Agent</p>
                             <img src="assets/t2.jpg" class="rounded-t-xl">
                             <div class="p-2">
                                 <p class="font-semibold">James Justin</p>
@@ -228,9 +231,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-----TEAM MEMBER2-->
-                    <div class="slide sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
-                        <div class="shadow-lg rounded-xl">
+                    <div class="swiper-slide relative">
+                        <div class="card shadow-lg rounded-xl">
+                            <p class="px-2 py-1 rounded-lg bg-blue text-white absolute text-sm">Agent</p>
                             <img src="assets/t6.jpg" class="rounded-t-xl">
                             <div class="p-2">
                                 <p class="font-semibold">Jacob Jones</p>
@@ -255,9 +258,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-----TEAM MEMBER3-->
-                    <div class="slide sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
-                        <div class="shadow-lg rounded-xl">
+                    <div class="swiper-slide relative">
+                        <div class="card shadow-lg rounded-xl">
+                            <p class="px-2 py-1 rounded-lg bg-blue text-white absolute text-sm">Agent</p>
                             <img src="assets/t3.jpg" class="rounded-t-xl">
                             <div class="p-2">
                                 <p class="font-semibold">Esther Howard</p>
@@ -282,9 +285,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-----TEAM MEMBER4-->
-                    <div class="slide sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
-                        <div class="shadow-lg rounded-xl">
+                    <div class="swiper-slide relative">
+                        <div class=" card shadow-lg rounded-xl">
+                            <p class="px-2 py-1 rounded-lg bg-blue text-white absolute text-sm">Agent</p>
                             <img src="assets/t6.jpg" class="rounded-t-xl">
                             <div class="p-2">
                                 <p class="font-semibold">Jacob Jones</p>
@@ -309,9 +312,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-----TEAM MEMBER5-->
-                    <div class="slide sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
-                        <div class="shadow-lg rounded-xl">
+                    <div class="swiper-slide relative">
+                        <div class="card shadow-lg rounded-xl">
+                            <p class="px-2 py-1 rounded-lg bg-blue text-white absolute text-sm">Agent</p>
                             <img src="assets/t2.jpg" class="rounded-t-xl">
                             <div class="p-2">
                                 <p class="font-semibold">James Justin</p>
@@ -336,9 +339,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-----TEAM MEMBER6-->
-                    <div class="slide sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
-                        <div class="shadow-lg rounded-xl">
+                    <div class="swiper-slide relative">
+                        <div class="card shadow-lg rounded-xl">
+                            <p class="px-2 py-1 rounded-lg bg-blue text-white absolute text-sm">Agent</p>
                             <img src="assets/t3.jpg" class="rounded-t-xl">
                             <div class="p-2">
                                 <p class="font-semibold">Esther Howard</p>
@@ -364,10 +367,298 @@
                         </div>
                     </div>
                 </div>
-              <div id="pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-------VALUES----->
+        <div class="bg-whitesmoke mt-20 px-5 py-10 mb-6">
+            <h1
+                class="text-black text-center font-semibold text-2xl md:max-w-4xl md:mx-auto md:text-4xl js-show-on-scroll">
+                Values That Define Our Commitment To You
+            </h1>
+            <p
+                class="mt-5 text-gray-500 mx-auto text-sm text-center md:max-w-3xl md:text-base js-show-on-scroll">
+                At the heart of our values is a promise to prioritize your needs, always
+                adhering to ethical practices and delivering exceptional results in the world of
+                real estate.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 md:gap-6 lg:mx-30 xl:mx-36 mt-10">
+                <!-------GRID1----->
+                <div
+                    class="rounded-xl w-full h-fit py-5 px-2 mb-7 bg-white shadow-2xl md:p-5 js-show-on-scroll">
+                    <i class='bx bx-trophy text-5xl text-blue'></i>
+                    <h1 class="text-2xl font-medium my-3">Achievement</h1>
+                    <p class="text-sm md:text-base">
+                        Our dedication to achievement means that each residence is meticulously
+                        selected, providing you with homes that surpass industry standards of quality
+                        and value.
+                    </p>
+                </div>
+                <!-------GRID2----->
+                <div
+                    class="rounded-xl w-full h-fit py-5 px-2 mb-7 bg-white shadow-2xl md:p-5 js-show-on-scroll">
+                    <i class='bx bxs-medal text-5xl text-blue'></i>
+                    <h1 class="text-2xl font-medium my-3">Excellence</h1>
+                    <p class="text-sm md:text-base">
+                        Excellence is the cornerstone of our ethos, driving us to meticulously craft
+                        homes that reflect the highest standards of quality and refinements.
+                    </p>
+                </div>
+                <!-------GRID3----->
+                <div
+                    class="rounded-xl w-full h-fit py-5 px-2 mb-7 bg-white shadow-2xl md:p-5 js-show-on-scroll">
+                    <i class='bx bx-badge-check text-5xl text-blue'></i>
+                    <h1 class="text-2xl font-medium my-3">Quality</h1>
+                    <p class="text-sm md:text-base">
+                        For us, quality is not an option, it's a standard, reflected in every facet of
+                        our homes, from the structural integrity to the finest finishes, ensuring a
+                        living space of enduring excellence.
+                    </p>
+                </div>
+                <!-------GRID4----->
+                <div
+                    class="rounded-xl w-full h-fit py-5 px-2 mb-7 bg-white shadow-2xl md:p-5 js-show-on-scroll">
+                    <i class='bx bx-group text-5xl text-blue'></i>
+                    <h1 class="text-2xl font-medium my-3">Inclusivity</h1>
+                    <p class="text-sm md:text-base">
+                        We believe in a real estate market that embraces inclusivity, where every person
+                        can find their dream home.
+                    </p>
+                </div>
+                <!-------GRID5----->
+                <div
+                    class="rounded-xl w-full h-fit py-5 px-2 mb-7 bg-white shadow-2xl md:p-5 js-show-on-scroll">
+                    <i class='bx bx-globe-alt text-5xl text-blue'></i>
+                    <h1 class="text-2xl font-medium my-3">Accessbility</h1>
+                    <p class="text-sm md:text-base">
+                        We're dedicated to breaking down barriers, providing a selection of luxury homes
+                        that offer unmatched value and accessibility.
+                    </p>
+                </div>
+                <!-------GRID6----->
+                <div
+                    class="rounded-xl w-full h-fit py-5 px-2 mb-7 bg-white shadow-2xl md:p-5 js-show-on-scroll">
+                    <i class='bx bx-search text-5xl text-blue'></i>
+                    <h1 class="text-2xl font-medium my-3">Transparency</h1>
+                    <p class="text-sm md:text-base">
+                        With unwavering transparency, we aim to build trust, foster strong
+                        relationships, and redefine what it means to work with a real estate partner.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-------ABOUT------>
+        <div
+            class="flex flex-col mb-20 justify-between mt-10 md:flex-row-reverse md:mt-24 lg:mx-30 xl:mx-36 xl:gap-x-7">
+
+            <!------LEFT------>
+            <div class="mx-5 md:w-1/2 xl:mx-0 js-show-on-scroll">
+                <img
+                    src="assets/image2.webp"
+                    class="w-full h-56 rounded-md mt-8 object-cover md:h-full js-show-on-scroll">
             </div>
 
-            <!--------JS LINKS-->
-            <script type="text/javascript" src="js/script.js"></script>
-        </body>
-    </html>
+            <!------RIGHT----->
+            <div class="mx-5 md:w-1/2 mb-5">
+                <h2 class="text-left font-bold text-2xl mt-8 xl:text-3xl js-show-on-scroll">
+                    Navigating Excellence: Our Commitment to Luxurious Value
+                </h2>
+                <p class="mt-5 font-medium text-sm text-gray-500 mb-8 js-show-on-scroll">
+                    At Shining Thread, we pride ourselves on navigating excellence with a promise of
+                    luxurious value. Our homes resonate with both prestige and affordability,
+                    offering you a lifestyle of grandeur without compromise.
+                </p>
+                <div class="flex justify-between js-show-on-scroll">
+                    <div>
+                        <h3 class="text-3xl text-blue font-semibold">
+                            80%
+                        </h3>
+                        <p class="font-medium text-sm text-gray-500 mt-2">Customer
+                            Satisfaction</p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl text-blue font-semibold">
+                            194+
+                        </h3>
+                        <p class="font-medium text-sm text-gray-500 mt-2">Successful Transactions</p>
+                    </div>
+                </div>
+                <div class="flex justify-between js-show-on-scroll">
+                    <div>
+                        <h3 class="text-3xl text-blue font-semibold mt-5">
+                            250M+
+                        </h3>
+                        <p class="font-medium text-sm text-gray-500 mt-2">In Property Sales</p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl text-blue font-semibold mt-5">
+                            12%
+                        </h3>
+                        <p class="font-medium text-sm text-gray-500 mt-2 mb-10">Avg yearly appreciation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------ABOUT2----->
+        <div
+            class="flex flex-col mb-10 justify-between mt-10 md:mb-20 md:flex-row md:mt-24 lg:mx-30 xl:mx-36 xl:gap-x-7">
+
+            <!------LEFT------>
+            <div class="mx-5 md:w-1/2 xl:mx-0 js-show-on-scroll">
+                <img
+                    src="assets/pexels-photo-257636.jpeg"
+                    class="w-full h-56 rounded-md mt-8 object-cover md:h-full js-show-on-scroll">
+            </div>
+
+            <!------RIGHT----->
+            <div class="mx-5 md:w-1/2 mb-5">
+                <h2 class="text-left font-bold text-2xl mt-8 xl:text-3xl js-show-on-scroll">
+                    Where Innovation Meets Luxury: Our Office
+                </h2>
+                <p class="mt-5 font-medium text-sm text-gray-500 mb-8 js-show-on-scroll">
+                    Our office is a haven of innovation, where luxury finds its perfect match. This
+                    is where we strategize, collaborate, and innovate to bring you homes that
+                    encapsulate both modernity and the enduring appeal of opulence.
+                </p>
+                <div class="grid md:grid-cols-2 js-show-on-scroll">
+                    <div>
+                        <div class="flex gap-2  place-items-center">
+                            <img src="assets/USA.png" class="w-10 h-10">
+                            <p class="font-semibold">Hawaii, USA</p>
+                        </div>
+                        <p class="font-medium mb-5 text-sm text-gray-500 mt-1">1901, Thornridge Cir. Shiloh, Hawaii 81063</p>
+                    </div>
+                    <div>
+                        <div class="flex gap-2  place-items-center">
+                            <img src="assets/USA.png" class="w-10 h-10">
+                            <p class="font-semibold">Maine, USA</p>
+                        </div>
+                        <p class="font-medium mb-5 text-sm text-gray-500 mt-1">8502 Preston Rd. Inglewood, Maine 98380</p>
+                    </div>
+                    <div>
+                        <div class="flex gap-2  place-items-center">
+                            <img src="assets/denmark.png" class="w-10 h-10">
+                            <p class="font-semibold">Zurich, Switzerland</p>
+                        </div>
+                        <p class="font-medium mb-5 text-sm text-gray-500 mt-1">Limeyard, Schanzengasse 10, 8001, Zurich, CHE</p>
+                    </div>
+                    <div>
+                        <div class="flex gap-2  place-items-center">
+                            <img src="assets/Australia.png" class="w-10 h-10">
+                            <p class="font-semibold">Queensland, Australia</p>
+                        </div>
+                        <p class="font-medium mb-5 text-sm text-gray-500 mt-1">48 Ferny Avenue, CALAVOS, Quennsland(QND), 4670</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------FOOTER------->
+        <div
+            class="flex flex-col justify-between text-sm mt-10 bg-gray-900 px-3 py-3 md:mt-16 md:flex-row lg:py-5 xl:px-36 xl:pt-14">
+            <div class="max-w-sm md:max-w-xs lg:max-w-lg xl:max-w-xl">
+                <div class="flex pointer-events-none js-show-on-scroll">
+                    <img
+                        src="assets/blue.bird-removebg-preview.png"
+                        class="w-44 h-10 object-cover md:w-52 md:h-30">
+                </div>
+                <p class="text-white px-3 pt-4 js-show-on-scroll">
+                    Your path to Luxury: Where Price and Prestige Unite. Begin your remarkable
+                    journey.
+                </p>
+                <form id="subscription-form">
+                    <div class="flex px-2 my-5 js-show-on-scroll">
+                        <input
+                            type="email"
+                            id="email"
+                            class=" text-gray-900 text-sm rounded-l-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white outline-none"
+                            placeholder="Enter email..."
+                            required="required">
+                        <button
+                            type="submit"
+                            class="text-white bg-blue transition duration-500 ease-in-out hover:bg-indigo-900 font-medium rounded-r-lg text-sm px-5 py-2.5 text-center">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+            <div
+                class="grid grid-cols-2 px-2 pt-4 text-white md:px-0 md:pt-0 md:grid-cols-3 md:gap-16 xl:gap-x-32">
+                <div>
+                    <h2 class="font-medium mb-2 js-show-on-scroll">
+                        Why Choose Us?
+                    </h2>
+                    <ul class="js-show-on-scroll">
+                        <li class="py-2">
+                            <a href="#" class="text-gray-400 hover:text-white">Featured Properties</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="text-gray-400 hover:text-white">Our Approach</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="text-gray-400 hover:text-white">Blog & Insights</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="text-gray-400 hover:text-white">Request a Tour</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-medium mb-2 js-show-on-scroll">
+                        Company
+                    </h2>
+                    <ul class="js-show-on-scroll">
+                        <li class="py-2 ">
+                            <a href="#" class="text-gray-400 hover:text-white">Leadership</a>
+                        </li>
+                        <li class="py-2 ">
+                            <a href="#" class="text-gray-400 hover:text-white">Careers</a>
+                        </li>
+                        <li class="py-2 ">
+                            <a href="#" class="text-gray-400 hover:text-white">Investor Relations</a>
+                        </li>
+                        <li class="py-2 ">
+                            <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-3 md:mt-0">
+                    <h2 class="font-medium mb-2 js-show-on-scroll">
+                        Resources
+                    </h2>
+                    <ul class="js-show-on-scroll">
+                        <li class="py-2">
+                            <a href="#" class="text-gray-400 hover:text-white">Community</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="text-gray-400 hover:text-white">Events</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="text-gray-400 hover:text-white">Help Center</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="text-gray-400 hover:text-white">Partners</a>
+                        </li class="py-2">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--------FOOTER2----->
+        <div class="bg-gray-900 px-3 pb-3 xl:px-36">
+            <hr class="h-px border-0 dark:bg-gray-500 js-show-on-scroll">
+            <p class="text-white text-sm py-5 text-center js-show-on-scroll">
+                &copy; 2023
+                <a href="#" class="hover:underline">Shining Thread</a>, All Rights Reserved.
+            </p>
+        </div>
+    </div>
+
+    <!--------JS LINKS-->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+</body>
+</html>
