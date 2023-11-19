@@ -1410,7 +1410,7 @@ input{
   border-color: red;
 }
 :disabled{
-    background-color: red;
+    background-color: darkblue;
 }
 .loading-overlay {
   position: fixed;
