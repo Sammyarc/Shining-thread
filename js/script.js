@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.getElementById("navbar");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 1) { // Change 1 to the desired scroll position
+        if (window.scrollY > 0) { // Change 0 to the desired scroll position
             navbar
                 .classList
                 .add("bg-on-scroll");
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         document.querySelector(".loading-overlay").style.display = "none";
         document.querySelector(".content").style.display = "block";
-    }, 1000); // Change the delay time (in milliseconds) as needed
+    }, 2000); // Change the delay time (in milliseconds) as needed
 });
 
 
