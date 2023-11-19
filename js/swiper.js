@@ -18,7 +18,7 @@ var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3, // Laptop view
         },
         1280: {
-            slidesPerView: 3.5, // Desktop view
+            slidesPerView: 4, // Desktop view
         },
     }
   });
