@@ -64,7 +64,7 @@ input{
 .invalid input{
     border-color: red;
 }
-disabled{
+:disabled{
     background-color: red;
 }
 
