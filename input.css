@@ -65,7 +65,7 @@ input{
     border-color: red;
 }
 disabled{
-    background-color: darkblue;
+    background-color: red;
 }
 
 .loading-overlay {
