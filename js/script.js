@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         document.querySelector(".loading-overlay").style.display = "none";
         document.querySelector(".content").style.display = "block";
-    }, 4000); // Change the delay time (in milliseconds) as needed
+    }, 1000); // Change the delay time (in milliseconds) as needed
 });
 
 
@@ -96,46 +96,3 @@ const callback = function (entries) {
   });
 
 
-// JavaScript code for slider with bullet pagination
-const slidesContainer = document.getElementById('slides');
-const slides = document.querySelectorAll('.slide');
-const paginationContainer = document.getElementById('pagination');
-const intervalTime = 5000; // Adjust the interval time in milliseconds (e.g., 5000 for 5 seconds)
-
-let currentIndex = 0;
-
-// Create bullets for each slide
-slides.forEach((_, index) => {
-  const bullet = document.createElement('div');
-  bullet.classList.add('bullet');
-  if (index === currentIndex) {
-    bullet.classList.add('active');
-  }
-  bullet.addEventListener('click', () => {
-    goToSlide(index);
-  });
-  paginationContainer.appendChild(bullet);
-});
-
-
-function goToSlide(index) {
-  currentIndex = index;
-  updateSlider();
-  updatePagination();
-}
-
-function updateSlider() {
-  const translateValue = -currentIndex * 100 + '%';
-  slidesContainer.style.transform = 'translateX(' + translateValue + ')';
-}
-
-function updatePagination() {
-  const bullets = document.querySelectorAll('.bullet');
-  bullets.forEach((bullet, index) => {
-    if (index === currentIndex) {
-      bullet.classList.add('active');
-    } else {
-      bullet.classList.remove('active');
-    }
-  });
-}
