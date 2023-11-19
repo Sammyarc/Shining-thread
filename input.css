@@ -64,6 +64,9 @@ input{
 .invalid input{
     border-color: red;
 }
+disabled{
+    background-color: darkblue;
+}
 
 .loading-overlay {
     position: fixed;
