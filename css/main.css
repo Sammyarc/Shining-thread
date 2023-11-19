@@ -1409,7 +1409,9 @@ input{
 .invalid input{
   border-color: red;
 }
-
+:disabled{
+    background-color: red;
+}
 .loading-overlay {
   position: fixed;
   top: 0;
